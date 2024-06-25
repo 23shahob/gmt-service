@@ -116,7 +116,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative mt-8">
+    <div className="relative mx-auto mt-8 max-w-[1440px]">
       <div className="mb-3 w-full overflow-hidden rounded-xl">
         <div
           className="flex transition-transform duration-1000"
@@ -134,7 +134,7 @@ const Carousel = () => {
           <button
             key={index}
             className={`mx-1 h-3 w-3 rounded-full transition duration-500 ease-in-out ${
-              index === currentIndex ? "w-12 h-3 bg-[#7A7687]" : "bg-[#B9B6BC]"
+              index === currentIndex ? "w-10 bg-[#7A7687]" : "w-3 bg-[#B9B6BC]"
             }`}
             onClick={() => setCurrentIndex(index)}
           />

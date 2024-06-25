@@ -7,7 +7,9 @@ import { FaRegHeart } from "react-icons/fa6";
 import { IoMdStats } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-import { Button, Dropdown, Space } from "antd";
+import { Dropdown, Space } from "antd";
+import AllCategories from "./AllCategories";
+import HeaderBottom from "./header/HeaderBottom";
 const Header = () => {
   const items = [
     {
@@ -61,7 +63,7 @@ const Header = () => {
   ];
 
   return (
-    <div>
+    <header>
       <div className="mx-auto hidden max-w-[1440px] items-center justify-between md:flex">
         <ul className="flex items-center gap-5 py-[10px]">
           <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
@@ -73,7 +75,9 @@ const Header = () => {
                   }}
                   placement="bottom"
                 >
-                  <NavLink to="/about">О компании</NavLink>
+                  <NavLink className="hover:text-[#07745E]" to="/about">
+                    О компании
+                  </NavLink>
                 </Dropdown>
               </Space>
             </Space>
@@ -117,9 +121,7 @@ const Header = () => {
           <div className="relative flex rounded-[50px] bg-[#D5D1E1] px-[2px] py-[1px] lg:h-[41px] lg:w-[614px]">
             <div className="flex h-full gap-3 rounded-[50px] bg-white lg:w-[565px]">
               <div className="flex items-center gap-1 rounded-[50px] bg-[#EFEFEF] px-[15px] py-[10px]">
-                <span className="text-sm font-semibold leading-normal text-[#7A7687]">
-                  Все категории
-                </span>
+                <AllCategories text={"Все категории"} />
                 <i>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -136,7 +138,7 @@ const Header = () => {
                 </i>
               </div>
               <input
-                className="h-full text-sm font-normal leading-normal text-[#7A7687] outline-none lg:w-[390px]"
+                className="h-full text-sm font-normal leading-normal text-[#7A7687] outline-none lg:w-[385px]"
                 type="search"
                 placeholder="Поиск"
               />
@@ -195,90 +197,9 @@ const Header = () => {
         </ul>
       </div>
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
-      <div className="mx-auto flex h-[62px] max-w-[1440px] items-center justify-between">
-        <div className="flex items-center gap-[5px]">
-          <i className="h-[17px] w-[17px]">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="17"
-              height="17"
-              viewBox="0 0 17 17"
-              fill="none"
-            >
-              <path
-                d="M1.78906 4.47266H14.3154M1.78906 8.49897H8.74813M1.78906 12.5253H12.2277"
-                stroke="#202020"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-              />
-            </svg>
-          </i>
-          <ul className="flex gap-[25px]">
-            <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
-              <Link to="#">Каталог</Link>
-            </li>
-            <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
-              <Link to="#">Производители</Link>
-            </li>
-            <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
-              <Link to="#">Кабинеты под ключ</Link>
-            </li>
-            <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
-              <Link to="#">Услуги</Link>
-            </li>
-            <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
-              <Link to="#">Акции</Link>
-            </li>
-            <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
-              <Link to="#">Покупателям</Link>
-            </li>
-            <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
-              <Link to="#">Контакты</Link>
-            </li>
-          </ul>
-        </div>
-        <div className="group flex gap-3">
-          <a
-            className="flex items-center gap-1 text-sm font-semibold leading-normal group-hover:text-[#07745E]"
-            href="#"
-          >
-            Москва{" "}
-            <i className="h-[13px] w-[13px]">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="13"
-                height="13"
-                viewBox="0 0 13 13"
-                fill="none"
-              >
-                <path
-                  d="M6.5 12C6.5 12 2 8.7 2 5.4C2 2.65 4.25 1 6.5 1C8.75 1 11 2.65 11 5.4C11 8.7 6.5 12 6.5 12ZM6.5 7.05C6.94755 7.05 7.37678 6.87616 7.69324 6.56673C8.00971 6.25729 8.1875 5.83761 8.1875 5.4C8.1875 4.96239 8.00971 4.54271 7.69324 4.23327C7.37678 3.92384 6.94755 3.75 6.5 3.75C6.05245 3.75 5.62322 3.92384 5.30676 4.23327C4.99029 4.54271 4.8125 4.96239 4.8125 5.4C4.8125 5.83761 4.99029 6.25729 5.30676 6.56673C5.62322 6.87616 6.05245 7.05 6.5 7.05V7.05Z"
-                  stroke="#202020"
-                />
-              </svg>
-            </i>
-          </a>
-          <a
-            className="rounded-[50px] border border-[#D5D1E1] px-5 py-[11px] transition duration-300 ease-in-out hover:border-[#07745E]"
-            href="tel:  +7(495)000-00-00"
-          >
-            <span className="text-sm font-semibold leading-normal">
-              +7(495)000-00-00
-            </span>
-          </a>
-          <a
-            className="rounded-[50px] bg-[#088269] px-[30px] py-[11px] transition duration-300 ease-in-out hover:bg-[#07745E]"
-            href="#"
-          >
-            <span className="text-sm font-semibold leading-normal text-white">
-              Заказать звонок
-            </span>
-          </a>
-          <a href="#"></a>
-        </div>
-      </div>
+      <HeaderBottom />
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
-    </div>
+    </header>
   );
 };
 
