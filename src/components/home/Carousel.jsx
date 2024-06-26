@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import SliderImg from "../assets/images/slider_img.png";
+import SliderImg from "../../assets/images/slider_img.png";
 
 const images = [
   <div className="relative flex h-full bg-[#E5E4ED]">
@@ -116,7 +116,7 @@ const Carousel = () => {
   };
 
   return (
-    <div className="relative mx-auto mt-8 max-w-[1440px]">
+    <div className="relative mx-auto mb-[100px] mt-8 max-w-[1440px]">
       <div className="mb-3 w-full overflow-hidden rounded-xl">
         <div
           className="flex transition-transform duration-1000"

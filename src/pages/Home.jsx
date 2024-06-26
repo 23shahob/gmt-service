@@ -1,7 +1,11 @@
 import React from "react";
-import Carousel from "../components/Carousel";
-import Location from "../components/Location";
-import FooterTop from "../components/FooterTop";
+import Carousel from "../components/home/Carousel";
+import Accordion from "../components/home/Accordion";
+import Location from "../components/home/Location";
+import FooterTop from "../components/home/FooterTop";
+import HomeStaticSection from "../components/home/HomeStaticSection";
+import Clients from "../components/home/Clients";
+import Brends from "../components/home/Brends";
 
 const Home = () => {
   return (
@@ -10,6 +14,10 @@ const Home = () => {
       <Carousel />
       {/* <div className="h-screen">ddd</div> */}
       <div>
+        <HomeStaticSection />
+        <Clients />
+        {/* <Brends /> */}
+        <Accordion />
         <Location />
         <FooterTop />
       </div>
