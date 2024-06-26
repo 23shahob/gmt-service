@@ -9,7 +9,7 @@ const Accordion = () => {
   };
 
   return (
-    <div className="mb-[150px] bg-[#088269] py-[100px]">
+    <div className="bg-[#088269] py-[100px]">
       <div className="mx-auto flex max-w-[1440px] justify-between text-[#f8f7f3]">
         <div className="text-[30px] font-medium leading-[120%]">
           Информация о компании

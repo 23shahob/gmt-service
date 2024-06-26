@@ -6,6 +6,7 @@ import FooterTop from "../components/home/FooterTop";
 import HomeStaticSection from "../components/home/HomeStaticSection";
 import Clients from "../components/home/Clients";
 import Brends from "../components/home/Brends";
+import CompanyNews from "../components/home/CompanyNews";
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
         <Clients />
         <Brends />
         <Accordion />
+        <CompanyNews />
         <Location />
         <FooterTop />
       </div>
