@@ -4,8 +4,7 @@ import BrendCarousel from "./BrendCarousel";
 const Brends = () => {
   return (
     <div className="py-[150px]">
-      <div className="mx-auto flex max-w-[1440px]">
-        <div className="mb-6">
+        <div className="mb-6 max-w-[1440px] mx-auto">
           <h2 className="mb-6 text-[30px] font-medium leading-[120%]">
             Бренды
           </h2>
@@ -13,6 +12,7 @@ const Brends = () => {
             Эксклюзивные поставщики
           </p>
         </div>
+      <div className="mx-auto flex max-w-[1440px]">
         <BrendCarousel />
       </div>
     </div>

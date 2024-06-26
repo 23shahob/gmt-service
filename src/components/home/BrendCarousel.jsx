@@ -74,7 +74,7 @@ const BrendCarousel = () => {
   };
 
   return (
-    <div className="flex w-[1200px] flex-col items-center">
+    <div className="flex w-full flex-col items-center">
       <div className="relative w-full overflow-hidden">
         <div
           className="mb-10 flex transition-transform duration-700"
