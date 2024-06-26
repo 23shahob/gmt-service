@@ -13,7 +13,7 @@ const Brends = () => {
             Эксклюзивные поставщики
           </p>
         </div>
-      <BrendCarousel />
+        <BrendCarousel />
       </div>
     </div>
   );

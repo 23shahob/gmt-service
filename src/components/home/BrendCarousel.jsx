@@ -74,7 +74,7 @@ const BrendCarousel = () => {
   };
 
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex w-[1200px] flex-col items-center">
       <div className="relative w-full overflow-hidden">
         <div
           className="mb-10 flex transition-transform duration-700"
@@ -83,7 +83,7 @@ const BrendCarousel = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="mx-2 w-80 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
+              className="mx-2 w-80 flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
             >
               <div className="flex h-48 w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
                 <img
@@ -140,7 +140,7 @@ const BrendCarousel = () => {
             </i>
           </button>
         </div>
-        <button className="rounded-[50px] bg-[#088269] px-[30px] py-[11px] text-sm text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E]">
+        <button className="rounded-[50px] bg-[#088269] px-[30px] py-[11px] text-sm text-[#F8F7F3] outline-none transition duration-300 ease-in-out hover:bg-[#07745E] focus:outline-none">
           Сертификаты
         </button>
       </div>

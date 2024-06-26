@@ -16,7 +16,7 @@ const Home = () => {
       <div>
         <HomeStaticSection />
         <Clients />
-        {/* <Brends /> */}
+        <Brends />
         <Accordion />
         <Location />
         <FooterTop />
