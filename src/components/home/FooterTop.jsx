@@ -3,7 +3,7 @@ import React from "react";
 const FooterTop = () => {
   return (
     <div className="bg-[#E5E4ED]">
-      <div className="mx-auto px-4 max-w-[1440px] gap-16 md:flex">
+      <div className="mx-auto max-w-[1440px] gap-16 px-4 md:flex">
         <div className="hidden w-1/2 md:block">
           <i className="w-full">
             <svg
@@ -21,7 +21,7 @@ const FooterTop = () => {
             </svg>
           </i>
         </div>
-        <div className="w-1/2 py-9">
+        <div className="py-9 sm:w-1/2">
           <h1 className="mb-[10px] text-lg font-medium leading-[120%] md:text-xl lg:mb-5 lg:text-[30px]">
             Подпишитесь и будьте в курсе!
           </h1>
@@ -29,20 +29,20 @@ const FooterTop = () => {
             Акции, скидки, распродажи ждут!
           </p>
           <div>
-            <form className="relative items-center rounded-[50px] border border-[#D5D1E1] bg-white mb-3 h-[35px] w-[360px] pl-4 lg:mb-5 lg:h-[43px] lg:pl-6 xl:w-[540px]">
+            <form className="relative mb-3 h-[35px] w-full items-center rounded-[50px] border border-[#D5D1E1] bg-white pl-4 lg:mb-5 lg:h-[43px] lg:pl-6 xl:w-[540px]">
               <input
-                className="h-full text-sm font-normal text-[7A7687] outline-none w-[220px] xl:w-[350px]"
+                className="h-full w-full rounded-[50px] text-sm font-normal text-[7A7687] outline-none xl:w-[350px]"
                 required
                 type="email"
                 placeholder="Введите email"
               />
-              <button className="absolute right-0 rounded-[50px] bg-[#088269] font-semibold text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E] px-5 py-2 text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
+              <button className="absolute right-0 rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E] lg:px-[30px] lg:py-[11px] lg:text-sm">
                 Подписаться
               </button>
             </form>
             <div className="flex items-center gap-3">
               <input className="h-5 w-5 outline-none" type="checkbox" />{" "}
-              <p className="font-medium text-[10px] lg:text-[12px]">
+              <p className="text-[10px] font-medium lg:text-[12px]">
                 Я даю согласие на обработку своих персональных данных.
               </p>
             </div>

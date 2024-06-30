@@ -142,7 +142,7 @@ const Header = () => {
                 </i>
               </div>
               <input
-                className="h-full w-f rounded-[50px] text-sm font-normal leading-normal text-[#7A7687] outline-none lg:w-[185px]"
+                className="h-full rounded-[50px] text-sm font-normal leading-normal text-[#7A7687] outline-none lg:w-[185px]"
                 type="search"
                 placeholder="Поиск"
               />

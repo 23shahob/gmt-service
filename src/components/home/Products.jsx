@@ -79,7 +79,7 @@ const Products = () => {
           </div>
         </div>
         <div className="flex w-full items-center justify-between">
-          <div className="hidden gap-3 sm:flex">
+          <div className="gap-3 flex">
             <button
               className="flex h-8 w-8 items-center justify-center rounded-full border border-[#D5D1E1] transition duration-300 ease-in-out hover:border-[#07745E] lg:h-10 lg:w-10"
               onClick={() => moveSlide(-1)}
@@ -121,12 +121,12 @@ const Products = () => {
           </div>
           <div className="flex gap-[10px]">
             <Link to="#">
-              <button className="rounded-[50px] border border-[#D5D1E1] px-5 py-2 text-[#088269] outline-none transition duration-300 ease-in-out hover:border-[#088269] focus:outline-none md:text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
+              <button className="rounded-[50px] hidden sm:block border border-[#D5D1E1] px-2 py-1 sm:px-5 sm:py-2 text-[#088269] outline-none transition duration-300 ease-in-out hover:border-[#088269] focus:outline-none text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
                 Бесплатная консультация
               </button>
             </Link>
             <Link to="/catalog">
-              <button className="rounded-[50px] bg-[#088269] px-5 py-2 text-[#F8F7F3] outline-none transition duration-300 ease-in-out hover:bg-[#07745E] focus:outline-none md:text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
+              <button className="rounded-[50px] bg-[#088269] px-5 py-2 text-[#F8F7F3] outline-none transition duration-300 ease-in-out hover:bg-[#07745E] focus:outline-none text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
                 Все товары
               </button>
             </Link>

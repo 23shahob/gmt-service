@@ -5,8 +5,8 @@ import { CatalogData } from "../../assets/data/data";
 
 const CatalogProducts = () => {
   return (
-    <div className="mx-auto flex max-w-[1440px] gap-[10px] md:px-5 lg:px-4">
-      <div className="h-[595px] hidden sm:block grid-cols-1 rounded-[10px] border border-[#E5E2EE] p-4 md:w-[236px] lg:w-80">
+    <div className="mx-auto flex max-w-[1440px] gap-[10px] px-4 md:px-5 lg:px-4">
+      <div className="hidden h-[595px] grid-cols-1 rounded-[10px] border border-[#E5E2EE] p-4 sm:block md:w-[236px] lg:w-80">
         <h2 className="mb-5 border-b border-[#E5E2EE] pb-4 font-medium leading-[140%]">
           Направления
         </h2>
@@ -145,17 +145,17 @@ const CatalogProducts = () => {
         {CatalogData.map((product) => (
           <div
             key={product.id}
-            className="rounded-[10px] border border-[#E5E2EE] w-[168px] bg-[#F8F7F3] md:h-[216px] md:w-[236px] xl:h-[304px] xl:w-80"
+            className="w-[168px] rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3] md:h-[216px] md:w-[236px] xl:h-[304px] xl:w-80"
           >
-            <div className="w-full rounded-t-[10px] border-b h-[108px] border-[#E5E2EE] md:h-[152px] xl:h-56">
+            <div className="h-[108px] w-full rounded-t-[10px] border-b border-[#E5E2EE] md:h-[152px] xl:h-56">
               <img
                 className="h-full w-full rounded-t-[10px]"
                 src={product.img}
                 alt="Product Img"
               />
             </div>
-            <div className="md:px-4 px-2 py-2 md:py-4 xl:px-6 xl:py-8">
-              <p className="font-medium leading-[140%] md:text-sm lg:text-[16px]">
+            <div className="px-2 py-2 md:px-4 md:py-4 xl:px-6 xl:py-8">
+              <p className="text-[12px] font-medium leading-[140%] md:text-sm lg:text-[16px]">
                 {product.title}
               </p>
             </div>
