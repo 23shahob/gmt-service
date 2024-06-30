@@ -83,26 +83,28 @@ const BrendCarousel = () => {
           {items.map((item, index) => (
             <div
               key={index}
-              className="mx-2 w-80 flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
+              className="mx-2 w-[236px] flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3] lg:w-80"
             >
-              <div className="flex h-48 w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
+              <div className="flex h-[152px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white lg:h-48">
                 <img
                   src={item.src}
                   alt={`${item.caption} Img`}
                   className="rounded-t-[10px] object-cover"
                 />
               </div>
-              <div className="px-6 py-5">
-                <div className="font-medium leading-[140%]">{item.caption}</div>
+              <div className="px-4 py-4 lg:px-6 lg:py-5">
+                <div className="text-[12px] font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+                  {item.caption}
+                </div>
               </div>
             </div>
           ))}
         </div>
       </div>
       <div className="flex w-full items-center justify-between">
-        <div className="flex gap-3">
+        <div className="flex gap-[10px]">
           <button
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#D5D1E1] transition duration-300 ease-in-out hover:border-[#07745E]"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-[#D5D1E1] transition duration-300 ease-in-out hover:border-[#07745E] lg:h-10 lg:w-10"
             onClick={() => moveSlide(-1)}
           >
             <i>
@@ -121,7 +123,7 @@ const BrendCarousel = () => {
             </i>
           </button>
           <button
-            className="flex h-10 w-10 items-center justify-center rounded-full border border-[#D5D1E1] transition duration-300 ease-in-out hover:border-[#07745E]"
+            className="flex h-8 w-8 items-center justify-center rounded-full border border-[#D5D1E1] transition duration-300 ease-in-out hover:border-[#07745E] lg:h-10 lg:w-10"
             onClick={() => moveSlide(1)}
           >
             <i>
@@ -140,7 +142,7 @@ const BrendCarousel = () => {
             </i>
           </button>
         </div>
-        <button className="rounded-[50px] bg-[#088269] px-[30px] py-[11px] text-sm text-[#F8F7F3] outline-none transition duration-300 ease-in-out hover:bg-[#07745E] focus:outline-none">
+        <button className="rounded-[50px] bg-[#088269] px-5 py-2 text-[#F8F7F3] outline-none transition duration-300 ease-in-out hover:bg-[#07745E] focus:outline-none md:text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
           Сертификаты
         </button>
       </div>

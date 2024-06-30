@@ -4,25 +4,25 @@ import TextField from "@mui/material/TextField";
 
 const Location = () => {
   return (
-    <div className="mx-auto mb-[150px] max-w-[1440px]">
-      <div className="flex gap-[10px]">
-        <div className="w-1/2 rounded-[10px] border border-[#E5E2EE] p-[1px]">
+    <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
+      <div className="flex flex-col-reverse gap-[10px] md:flex md:flex-row">
+        <div className="w-full rounded-[10px] border border-[#E5E2EE] p-[1px] md:w-1/2">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1990.973360480749!2d69.20404123380254!3d41.28528633075618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sru!2s!4v1719314050373!5m2!1sru!2s"
             className="h-full w-full rounded-[10px]"
           ></iframe>
         </div>
-        <div className="w-1/2 rounded-[10px] border border-[#E5E2EE] p-10">
-          <h1 className="mb-6 text-[30px] font-medium leading-[120%]">
+        <div className="w-full rounded-[10px] border border-[#E5E2EE] p-5 md:w-1/2 lg:p-10">
+          <h1 className="mb-2 text-lg font-medium leading-[120%] md:mb-5 md:text-xl lg:mb-6 lg:text-[30px]">
             Остались вопросы?
           </h1>
-          <p className="mb-10 font-medium leading-[140%] text-[#7A7687]">
+          <p className="md:text-xm mb-8 font-medium leading-[140%] text-[#7A7687] md:leading-[118%] lg:mb-10 lg:text-[16px]">
             Задайте их по номеру телефона +7 (495) 000-00-00 или оставьте свои
             координаты и наш менеджер перезвонит вам через 10 минут
           </p>
-          <form action="">
+          <form>
             <Box
-              className="mb-10"
+              className="md:mb-8 lg:mb-10"
               sx={{
                 "& .MuiTextField-root": {
                   m: 1,
@@ -95,11 +95,11 @@ const Location = () => {
                 />
               </div>
             </Box>
-            <div className="flex gap-7">
-              <button className="rounded-[50px] bg-[#088269] px-[30px] py-[11px] text-sm font-semibold text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E]">
+            <div className="mt-2 lg:flex lg:gap-7">
+              <button className="mb-3 rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E] lg:px-[30px] lg:py-[11px] lg:text-sm">
                 Отправить
               </button>
-              <p className="text-[12px] font-medium text-[#7A7687]">
+              <p className="text-[10px] font-medium text-[#7A7687] lg:text-[12px]">
                 Нажимая «Отправить», я соглашаюсь c обработкой персональных
                 данных на условиях{" "}
                 <span className="text-[#088269]">

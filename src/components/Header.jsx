@@ -64,8 +64,8 @@ const Header = () => {
 
   return (
     <header>
-      <div className="mx-auto hidden max-w-[1440px] items-center justify-between md:flex">
-        <ul className="flex items-center gap-5 py-[10px]">
+      <div className="mx-auto hidden max-w-[1440px] items-center justify-between px-4 md:flex md:px-5 lg:px-4">
+        <ul className="flex items-center md:gap-[10px] md:gap-y-[5px] lg:gap-5 lg:py-[10px]">
           <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
             <Space direction="vertical">
               <Space wrap>
@@ -82,20 +82,20 @@ const Header = () => {
               </Space>
             </Space>
           </li>
-          <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E] md:text-[10px] lg:text-[12px]">
             <NavLink to="/delivery">Доставка</NavLink>
           </li>
-          <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E] md:text-[10px] lg:text-[12px]">
             <NavLink to="/payment">Оплата</NavLink>
           </li>
-          <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E] md:text-[10px] lg:text-[12px]">
             <NavLink to="/guarantee">Гарантии</NavLink>
           </li>
-          <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E] md:text-[10px] lg:text-[12px]">
             <NavLink to="/blog">Блог</NavLink>
           </li>
         </ul>
-        <div className="flex text-[12px] font-medium leading-normal text-[#7A7687] md:gap-[25px] lg:gap-[45px]">
+        <div className="flex font-medium leading-normal text-[#7A7687] md:gap-[25px] md:text-[10px] lg:gap-[45px] lg:text-[12px]">
           <a
             className="transition duration-300 ease-in-out hover:text-[#07745E]"
             href="mailto: info@mail.ru"
@@ -111,16 +111,20 @@ const Header = () => {
         </div>
       </div>
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between lg:h-[93px]">
-        <div className="flex items-center gap-10">
-          <div>
+      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 md:h-[52px] md:px-5 lg:h-[93px] lg:px-4">
+        <div className="mb-4 mt-3 items-center md:mt-0 md:flex md:gap-8 lg:gap-10">
+          <div className="mb-3 md:mb-0">
             <Link to="/">
-              <img className="lg:h-10 lg:w-24" src={SiteLogo} alt="Site Logo" />
+              <img
+                className="md:h-[30px] md:w-[73px] lg:h-10 lg:w-24"
+                src={SiteLogo}
+                alt="Site Logo"
+              />
             </Link>
           </div>
-          <div className="relative flex rounded-[50px] bg-[#D5D1E1] px-[2px] py-[1px] lg:h-[41px] lg:w-[614px]">
-            <div className="flex h-full gap-3 rounded-[50px] bg-white lg:w-[565px]">
-              <div className="flex items-center gap-1 rounded-[50px] bg-[#EFEFEF] px-[15px] py-[10px]">
+          <div className="relative flex h-[34px] w-full rounded-[50px] bg-[#D5D1E1] px-[2px] py-[1px] md:h-8 md:w-[403px] lg:h-[41px] lg:w-[614px]">
+            <div className="flex h-full w-full gap-3 rounded-[50px] bg-white md:w-[360px] lg:w-[565px]">
+              <div className="flex relative items-center gap-1 rounded-[50px] bg-[#EFEFEF] px-[10px] md:px-[15px] md:py-[7px] lg:py-[10px]">
                 <AllCategories text={"Все категории"} />
                 <i>
                   <svg
@@ -138,13 +142,13 @@ const Header = () => {
                 </i>
               </div>
               <input
-                className="h-full text-sm font-normal leading-normal text-[#7A7687] outline-none lg:w-[385px]"
+                className="h-full w-f rounded-[50px] text-sm font-normal leading-normal text-[#7A7687] outline-none lg:w-[185px]"
                 type="search"
                 placeholder="Поиск"
               />
             </div>
-            <span className="absolute right-[14px] top-2 flex items-center">
-              <i className="lg:h-6 lg:w-6">
+            <span className="absolute right-[14px] top-1 flex items-center lg:top-2">
+              <i className="md:h-[17px] md:w-[17px] lg:h-6 lg:w-6">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -161,7 +165,7 @@ const Header = () => {
             </span>
           </div>
         </div>
-        <div className="flex flex-col">
+        <div className="hidden flex-col xl:flex">
           <span className="text-[12px] font-medium leading-normal text-[#7A7687]">
             Пн-Пт с 09:00-19:00
           </span>
@@ -169,28 +173,28 @@ const Header = () => {
             Сб-Вс - выходной
           </span>
         </div>
-        <ul className="flex items-center gap-[25px]">
+        <ul className="hidden items-center md:flex md:gap-[15px] lg:gap-[25px]">
           <li className="group flex cursor-pointer flex-col items-center justify-center">
-            <FaRegUser className="mb-1 h-6 w-6 transition duration-300 ease-in-out group-hover:text-[#07745E]" />
-            <span className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E]">
+            <FaRegUser className="mb-1 transition duration-300 ease-in-out group-hover:text-[#07745E] md:h-5 md:w-5 lg:h-6 lg:w-6" />
+            <span className="hidden text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E] xl:block">
               Войти
             </span>
           </li>
           <li className="group flex cursor-pointer flex-col items-center justify-center">
-            <FaRegHeart className="mb-1 h-6 w-6 transition duration-300 ease-in-out group-hover:text-[#07745E]" />
-            <span className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E]">
+            <FaRegHeart className="mb-1 transition duration-300 ease-in-out group-hover:text-[#07745E] md:h-5 md:w-5 lg:h-6 lg:w-6" />
+            <span className="hidden text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E] xl:block">
               Избранное
             </span>
           </li>
           <li className="group flex cursor-pointer flex-col items-center justify-center">
-            <IoMdStats className="mb-1 h-6 w-6 transition duration-300 ease-in-out group-hover:text-[#07745E]" />
-            <span className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E]">
+            <IoMdStats className="mb-1 transition duration-300 ease-in-out group-hover:text-[#07745E] md:h-5 md:w-5 lg:h-6 lg:w-6" />
+            <span className="hidden text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E] xl:block">
               Сравнить
             </span>
           </li>
           <li className="group flex cursor-pointer flex-col items-center justify-center">
-            <MdOutlineShoppingCart className="mb-1 h-6 w-6 transition duration-300 ease-in-out group-hover:text-[#07745E]" />
-            <span className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E]">
+            <MdOutlineShoppingCart className="mb-1 transition duration-300 ease-in-out group-hover:text-[#07745E] md:h-5 md:w-5 lg:h-6 lg:w-6" />
+            <span className="hidden text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E] xl:block">
               Корзина
             </span>
           </li>

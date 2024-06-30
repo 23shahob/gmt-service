@@ -2,12 +2,12 @@ import React from "react";
 
 const HomeStaticSection = () => {
   return (
-    <div className="mx-auto mb-[150px] max-w-[1440px]">
-      <h3 className="mb-10 text-[30px] font-medium leading-[120%]">
+    <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
+      <h3 className="mb-6 text-lg font-medium leading-[120%] md:mb-8 md:text-xl lg:mb-10 lg:text-[30px]">
         Почему выбирают нас?
       </h3>
-      <div className="flex gap-[10px]">
-        <div className="flex w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
+      <div className="grid grid-cols-2 gap-[10px] md:grid-cols-4">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] md:h-[175px] lg:h-80">
           <i className="mb-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -23,9 +23,11 @@ const HomeStaticSection = () => {
               />
             </svg>
           </i>
-          <p className="font-medium leading-[140%]">Быстрая доставка</p>
+          <p className="text-center font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+            Быстрая доставка
+          </p>
         </div>
-        <div className="flex w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
           <i className="mb-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -73,11 +75,11 @@ const HomeStaticSection = () => {
               />
             </svg>
           </i>
-          <p className="font-medium leading-[140%]">
+          <p className="text-center font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
             Весь товар сертифицирован
           </p>
         </div>
-        <div className="flex w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
           <i className="mb-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -95,9 +97,11 @@ const HomeStaticSection = () => {
               />
             </svg>
           </i>
-          <p className="font-medium leading-[140%]">Гибкая система скидок</p>
+          <p className="text-center font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+            Гибкая система скидок
+          </p>
         </div>
-        <div className="flex w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
           <i className="mb-10">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +116,9 @@ const HomeStaticSection = () => {
               />
             </svg>
           </i>
-          <p className="font-medium leading-[140%]">Лет на рынке</p>
+          <p className="text-center font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+            Лет на рынке
+          </p>
         </div>
       </div>
     </div>

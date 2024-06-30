@@ -2,6 +2,7 @@ import React from "react";
 
 import { Dropdown, Space } from "antd";
 import { Link } from "react-router-dom";
+import { FiPhone } from "react-icons/fi";
 
 const items = [
   {
@@ -145,7 +146,7 @@ const items = [
 
 const HeaderBottom = () => {
   return (
-    <div className="mx-auto flex h-[62px] max-w-[1440px] items-center justify-between">
+    <div className="mx-auto x-4 hidden md:flex max-w-[1440px] items-center justify-between md:h-[52px] md:px-5 lg:h-[62px] lg:px-4">
       <div className="flex items-center gap-[5px]">
         <i className="h-[17px] w-[17px]">
           <svg
@@ -163,8 +164,8 @@ const HeaderBottom = () => {
             />
           </svg>
         </i>
-        <ul className="flex gap-[25px]">
-          <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
+        <ul className="flex items-center gap-[25px]">
+          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Space direction="vertical">
               <Space wrap>
                 <Dropdown
@@ -173,39 +174,39 @@ const HeaderBottom = () => {
                   }}
                   placement="bottomLeft"
                 >
-                  <Link to="#" className="hover:text-[#07745E]">
+                  <Link to="/catalog" className="hover:text-[#07745E]">
                     Каталог
                   </Link>
                 </Dropdown>
               </Space>
             </Space>
           </li>
-          <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Link to="#">Производители</Link>
           </li>
-          <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Link to="#">Кабинеты под ключ</Link>
           </li>
-          <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Link to="#">Услуги</Link>
           </li>
-          <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Link to="#">Акции</Link>
           </li>
-          <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Link to="#">Покупателям</Link>
           </li>
-          <li className="text-sm font-semibold transition duration-300 ease-in-out hover:text-[#07745E]">
+          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Link to="#">Контакты</Link>
           </li>
         </ul>
       </div>
-      <div className="group flex gap-3">
+      <div className="group flex md:gap-[10px] lg:gap-3">
         <a
-          className="flex items-center gap-1 text-sm font-semibold leading-normal group-hover:text-[#07745E]"
+          className="flex items-center font-semibold leading-normal group-hover:text-[#07745E] md:gap-[3px] md:text-[12px] lg:gap-1 lg:text-sm"
           href="#"
         >
-          Москва{" "}
+          Москва
           <i className="h-[13px] w-[13px]">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -222,7 +223,7 @@ const HeaderBottom = () => {
           </i>
         </a>
         <a
-          className="rounded-[50px] border border-[#D5D1E1] px-5 py-[11px] transition duration-300 ease-in-out hover:border-[#07745E]"
+          className="hidden rounded-[50px] border border-[#D5D1E1] px-5 py-[11px] transition duration-300 ease-in-out hover:border-[#07745E] xl:block"
           href="tel:  +7(495)000-00-00"
         >
           <span className="text-sm font-semibold leading-normal">
@@ -230,12 +231,13 @@ const HeaderBottom = () => {
           </span>
         </a>
         <a
-          className="rounded-[50px] bg-[#088269] px-[30px] py-[11px] transition duration-300 ease-in-out hover:bg-[#07745E]"
+          className="rounded-[50px] flex items-center bg-[#088269] py-[11px] transition duration-300 ease-in-out hover:bg-[#07745E] md:p-2 lg:px-[30px]"
           href="#"
         >
-          <span className="text-sm font-semibold leading-normal text-white">
+          <span className="hidden text-sm font-semibold leading-normal text-white lg:block">
             Заказать звонок
           </span>
+          <FiPhone className="h-[17px] w-[17px] text-white lg:hidden" />
         </a>
         <a href="#"></a>
       </div>

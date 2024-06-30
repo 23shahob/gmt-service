@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const items = [
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Реанимация
       </Link>
     ),
@@ -13,7 +13,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Хирургия
       </Link>
     ),
@@ -21,7 +21,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Офтальмология
       </Link>
     ),
@@ -29,7 +29,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Лабораторная диагностика
       </Link>
     ),
@@ -37,7 +37,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Акушерство
       </Link>
     ),
@@ -45,7 +45,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Гинекология
       </Link>
     ),
@@ -53,7 +53,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Гистология
       </Link>
     ),
@@ -61,7 +61,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Косметология
       </Link>
     ),
@@ -69,7 +69,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Оториноларингология
       </Link>
     ),
@@ -77,7 +77,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Рентгенология и томография
       </Link>
     ),
@@ -85,7 +85,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Стерилизация
       </Link>
     ),
@@ -93,7 +93,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Физиотерапия и реабилитация
       </Link>
     ),
@@ -101,7 +101,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Функциональная диагностика
       </Link>
     ),
@@ -109,7 +109,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Эндоскопия
       </Link>
     ),
@@ -118,7 +118,7 @@ const items = [
   { type: "divider" },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Новинки
       </Link>
     ),
@@ -126,7 +126,7 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Распродажи
       </Link>
     ),
@@ -134,14 +134,12 @@ const items = [
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <Link className="lg:text-sm md:text-[12px] font-normal" to="#">
         Кабинеты под ключ
       </Link>
     ),
     key: "17",
   },
-  
-
 ];
 
 const AllCategories = ({ text }) => (
@@ -153,10 +151,9 @@ const AllCategories = ({ text }) => (
   >
     <a onClick={(e) => e.preventDefault()}>
       <Space className="cursor-pointer">
-        <span className="text-sm font-semibold leading-normal">
+        <span className="font-semibold leading-normal text-[12px] lg:text-sm">
           {text}
         </span>
-
       </Space>
     </a>
   </Dropdown>

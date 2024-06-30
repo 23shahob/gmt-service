@@ -3,140 +3,140 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="z-50 bg-[#088269]">
-      <div className="mx-auto max-w-[1440px]">
-        <div className="flex justify-between border-b border-[#F8F7F3] pb-14 pt-10">
-          <div>
-            <h3 className="mb-4 border-b border-[#F8F7F3] pb-4 text-sm font-semibold text-[#F8F7F3]">
+    <footer className="bg-[#088269] md:px-5 lg:px-4">
+      <div className="mx-auto max-w-[1440px] px-4">
+        <div className="justify-between border-b border-[#F8F7F3] pb-14 pt-10 md:flex">
+          <div className="mb-5 md:mb-0">
+            <h3 className="mb-[10px] border-b border-[#F8F7F3] pb-[10px] text-[12px] font-semibold text-[#F8F7F3] lg:mb-4 lg:pb-4 lg:text-sm">
               Покупателям
             </h3>
-            <div className="flex gap-[60px]">
-              <ul className="flex flex-col gap-y-2">
-                <li className="text-sm font-normal text-[#F8F7F3]">
+            <div className="block gap-5 md:flex xl:gap-[60px]">
+              <ul className="flex flex-col gap-y-1 lg:gap-y-2">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">О компании</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Сертификаты</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Вакансии</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Гарантии</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Услуги</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Акции</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Доставка</Link>
                 </li>
               </ul>
-              <ul className="flex flex-col gap-y-2">
-                <li className="text-sm font-normal text-[#F8F7F3]">
+              <ul className="flex flex-col gap-y-1 lg:gap-y-2">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Оплата</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Возврат</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">FAQ</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Лизинг</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Отзывы</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Блог</Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div>
-            <h3 className="mb-4 border-b border-[#F8F7F3] pb-4 text-sm font-semibold text-[#F8F7F3]">
+          <div className="mb-5 md:mb-0">
+            <h3 className="mb-[10px] border-b border-[#F8F7F3] pb-[10px] text-[12px] font-semibold text-[#F8F7F3] lg:mb-4 lg:pb-4 lg:text-sm">
               Каталог
             </h3>
-            <div className="flex gap-[60px]">
-              <ul className="flex flex-col gap-y-2">
-                <li className="text-sm font-normal text-[#F8F7F3]">
+            <div className="block md:flex md:gap-5 xl:gap-[60px]">
+              <ul className="flex flex-col gap-y-1 lg:gap-y-2">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Реанимация</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Хирургия</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Офтальмология</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Лабораторная диагностика</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Акушерство и Гинекология</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Гистология</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Косметология</Link>
                 </li>
               </ul>
-              <ul className="flex flex-col gap-y-2">
-                <li className="text-sm font-normal text-[#F8F7F3]">
+              <ul className="flex flex-col gap-y-1 lg:gap-y-2">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Орториноларингология</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Рентгенология и томография</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Стрерилизация</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Физиотерапия и реабилитация</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Функциональная диагностика</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Эндоскопия</Link>
                 </li>
               </ul>
-              <ul className="flex flex-col gap-y-2">
-                <li className="text-sm font-normal text-[#F8F7F3]">
+              <ul className="flex flex-col gap-y-1 lg:gap-y-2">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Новинки</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Распродажи</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Кабинеты под ключ</Link>
                 </li>
-                <li className="text-sm font-normal text-[#F8F7F3]">
+                <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Скачать каталог</Link>
                 </li>
               </ul>
             </div>
           </div>
-          <div>
-            <h3 className="mb-4 border-b border-[#F8F7F3] pb-4 text-sm font-semibold text-[#F8F7F3]">
+          <div className="mb-5 md:mb-0">
+            <h3 className="mb-[10px] border-b border-[#F8F7F3] pb-[10px] text-[12px] font-semibold text-[#F8F7F3] lg:mb-4 lg:pb-4 lg:text-sm">
               Контакты
             </h3>
             <ul>
-              <li className="mb-6">
-                <h4 className="mb-1 text-sm font-semibold text-[#F8F7F3]">
+              <li className="mb-5 lg:mb-6">
+                <h4 className="mb-1 text-[12px] font-semibold text-[#F8F7F3] lg:text-sm">
                   Адрес:
                 </h4>
-                <p className="text-sm font-normal text-[#F8F7F3]">
+                <p className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   г. Москва, ул. Московская, д. 35
                 </p>
               </li>
-              <li className="mb-6 flex items-center gap-2">
+              <li className="mb-5 flex items-center gap-2 lg:mb-6">
                 <Link
                   to="#"
-                  className="mb-1 text-sm font-semibold text-[#F8F7F3]"
+                  className="mb-1 text-[12px] font-semibold text-[#F8F7F3] lg:text-sm"
                 >
                   Карта проезда
                 </Link>
@@ -158,24 +158,24 @@ const Footer = () => {
                   </svg>
                 </i>
               </li>
-              <li className="mb-6">
-                <p className="text-sm font-normal text-[#F8F7F3]">
+              <li className="mb-5 lg:mb-6">
+                <p className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   График работы: <br /> Пн-Пт с 09:00-19:00, <br /> Сб-Вс -
                   выходной
                 </p>
               </li>
-              <li className="flex flex-col gap-y-[5px]">
-                <p className="text-sm font-normal text-[#F8F7F3]">
+              <li className="flex flex-col gap-y-[2px] lg:gap-y-[5px]">
+                <p className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   +7 000-000-00-00
                 </p>
-                <p className="text-sm font-normal text-[#F8F7F3]">
+                <p className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   +7 495-000-00-00
                 </p>
-                <p className="text-sm font-normal text-[#F8F7F3]">
+                <p className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   8 800-000-00-00
                 </p>
                 <a
-                  className="text-sm font-normal text-[#F8F7F3]"
+                  className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
                   href="mailto: info@mail.ru"
                 >
                   info@mail.ru
@@ -184,9 +184,9 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="mb-14 pt-4">
-          <ul className="flex justify-between">
-            <li>
+        <div className="mb-14 pt-[10px] lg:pt-4">
+          <ul className="md:flex block justify-between">
+            <li className="mb-4 md:mb-0">
               <Link to="/">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -226,12 +226,12 @@ const Footer = () => {
                   </defs>
                 </svg>
               </Link>
-              <p className="mt-3 text-[12px] font-normal text-[#F8F7F3]">
+              <p className="text-[12px] font-normal text-[#F8F7F3] md:mt-1 md:text-[10px] lg:mt-3">
                 ООО «ГЛОБАЛ МЕДИКАЛ ТРЕЙД»
               </p>
             </li>
-            <li>
-              <p className="mb-3 text-sm font-semibold text-[#F8F7F3]">
+            <li className="mb-4 md:mb-0">
+              <p className="mb-1 text-[12px] font-semibold text-[#F8F7F3] lg:mb-3 lg:text-sm">
                 Мы в соцсетях
               </p>
               <div className="flex gap-[10px]">
@@ -291,33 +291,51 @@ const Footer = () => {
                 </Link>
               </div>
             </li>
-            <li className="flex flex-col gap-y-2">
-              <Link to="#" className="text-sm font-normal text-[#f8f7f3]">
+            <li className="flex mb-4 md:mb-0 flex-col gap-y-1 lg:gap-y-2">
+              <Link
+                to="#"
+                className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
+              >
                 Партнерская программа
               </Link>
-              <Link to="#" className="text-sm font-normal text-[#f8f7f3]">
+              <Link
+                to="#"
+                className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
+              >
                 Оптовые продажи
               </Link>
-              <Link to="#" className="text-sm font-normal text-[#f8f7f3]">
+              <Link
+                to="#"
+                className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
+              >
                 Реквизиты
               </Link>
             </li>
-            <li className="flex flex-col gap-y-2">
-              <Link to="#" className="text-sm font-normal text-[#f8f7f3]">
+            <li className="flex mb-4 md:mb-0 flex-col gap-y-1 lg:gap-y-2">
+              <Link
+                to="#"
+                className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
+              >
                 Политика конфиденциальности
               </Link>
-              <Link to="#" className="text-sm font-normal text-[#f8f7f3]">
+              <Link
+                to="#"
+                className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
+              >
                 Условия соглашения
               </Link>
-              <Link to="#" className="text-sm font-normal text-[#f8f7f3]">
+              <Link
+                to="#"
+                className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
+              >
                 Карта сайта
               </Link>
             </li>
             <li className="flex flex-col gap-y-2">
-              <p className="text-sm font-normal text-[#f8f7f3]">
+              <p className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                 Способы оплаты
               </p>
-              <div className="flex gap-4">
+              <div className="grid grid-cols-3 gap-[10px] gap-y-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
                 <i className="cursor-pointer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -449,11 +467,11 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="flex items-center justify-between pb-5">
-          <p className="text-[12px] font-normal text-[#f8f7f3]">
+        <div className="md:flex block items-center justify-between pb-3 lg:pb-5">
+          <p className="font-normal text-[#f8f7f3] mb-4 md:mb-0 text-[10px] lg:text-[12px]">
             © 2022 Медоборудование <br /> Все права защищены
           </p>
-          <p className="text-[12px] font-normal text-[#f8f7f3] opacity-60">
+          <p className="font-normal text-[#f8f7f3] opacity-60 text-[10px] lg:text-[12px]">
             Информация на данном сайте носит справочный характер и не является
             публичной офертой, определяемой положениями Статьи 437 Гражданского
             кодекса Российской Федерации

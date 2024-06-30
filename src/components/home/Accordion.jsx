@@ -9,26 +9,29 @@ const Accordion = () => {
   };
 
   return (
-    <div className="bg-[#088269] py-[100px]">
-      <div className="mx-auto flex max-w-[1440px] justify-between text-[#f8f7f3]">
-        <div className="text-[30px] font-medium leading-[120%]">
+    <div className="bg-[#088269] py-14 lg:py-[100px]">
+      <div className="mx-auto max-w-[1440px] justify-between px-4 text-[#f8f7f3] sm:flex md:px-5 lg:px-4">
+        <div className="mb-10 text-lg font-medium leading-[120%] sm:mb-0 md:text-xl lg:text-[30px]">
           Информация о компании
         </div>
-        <div>
+        <div className="w-full transition duration-700 ease-in-out sm:w-1/2">
           {[
             "О компании",
             "Преимущества сотрудников",
             "Достижения компании",
             "Карьерный рост",
           ].map((title, index) => (
-            <div key={index} className="w-[650px] border-y border-[#f8f7f3]">
+            <div
+              key={index}
+              className="border-y border-[#f8f7f3] transition duration-300 ease-in-out"
+            >
               <button
                 onClick={() => toggleAccordion(index)}
-                className="flex w-full items-center justify-between py-6 focus:outline-none"
+                className="flex w-full items-center justify-between py-4 focus:outline-none lg:py-6"
               >
                 <span>{title}</span>
                 {activeIndex === index ? (
-                  <span className="flex h-8 w-8 items-center justify-center rounded-[40px] border border-[#F8F7F3] bg-white transition duration-300 ease-in-out">
+                  <span className="flex h-[27px] w-[27px] items-center justify-center rounded-[40px] border border-[#F8F7F3] bg-white transition duration-300 ease-in-out lg:h-8 lg:w-8">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -45,7 +48,7 @@ const Accordion = () => {
                     </svg>
                   </span>
                 ) : (
-                  <span className="flex h-8 w-8 items-center justify-center rounded-[40px] border border-[#F8F7F3] transition duration-300 ease-in-out">
+                  <span className="flex h-[27px] w-[27px] items-center justify-center rounded-[40px] border border-[#F8F7F3] transition duration-300 ease-in-out lg:h-8 lg:w-8">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="20"
@@ -64,15 +67,15 @@ const Accordion = () => {
                 )}
               </button>
               {activeIndex === index && (
-                <div className="">
-                  <p className="mb-10 font-medium leading-[140%]">
+                <div className="transition duration-300 ease-in-out">
+                  <p className="text-[12px] font-medium opacity-80 md:mb-8 md:text-sm md:leading-[118%] lg:mb-10 lg:text-[16px] lg:leading-[140%]">
                     Но синтетическое тестирование, в своём классическом
                     представлении, допускает внедрение поэтапного и
                     последовательного развития общества. В рамках спецификации
                     современных стандартов, сторонники тоталитаризма в науке
                     будут функционально разнесены
                   </p>
-                  <p className="pb-4">
+                  <p className="pb-4 text-[12px] lg:text-sm">
                     {" "}
                     <Link to="#">Подробнее ↗</Link>
                   </p>
