@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Carousel from "../components/home/Carousel";
-import Accordion from "../components/home/Accordion";
+import AccordionSection from "../components/home/AccordionSection";
 import Location from "../components/home/Location";
 import FooterTop from "../components/home/FooterTop";
 import HomeStaticSection from "../components/home/HomeStaticSection";
@@ -41,7 +41,7 @@ const Home = () => {
           <Brends />
         </div>
         <div className="pb-[60px] md:pb-[120px] lg:pb-[135px] xl:pb-[150px]">
-          <Accordion />
+          <AccordionSection />
         </div>
         <div className="pb-[60px] md:pb-[120px] lg:pb-[135px] xl:pb-[150px]">
           <CompanyNews />
@@ -49,7 +49,9 @@ const Home = () => {
         <div className="pb-[60px] md:pb-[120px] lg:pb-[150px]">
           <Location />
         </div>
-        <div><FooterTop /></div>
+        <div>
+          <FooterTop />
+        </div>
       </div>
     </div>
   );

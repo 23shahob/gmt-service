@@ -37,7 +37,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>
@@ -51,7 +51,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>
@@ -65,7 +65,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>
@@ -79,7 +79,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>
@@ -93,7 +93,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>
@@ -107,7 +107,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>
@@ -121,7 +121,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>
@@ -135,7 +135,7 @@ const Clients = () => {
                 alt="Slider Img"
               />
             </div>
-            <div className="md:px-4 md:py-4 lg:px-6 lg:py-5">
+            <div className="px-4 py-4 lg:px-6 lg:py-5">
               <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
                 НМИЦ онкологии им. Н.Н. Блохина
               </p>

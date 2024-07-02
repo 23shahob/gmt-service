@@ -188,7 +188,7 @@ const HeaderBottom = () => {
             <Link to="#">Кабинеты под ключ</Link>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Link to="#">Услуги</Link>
+            <Link to="/services">Услуги</Link>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <Link to="#">Акции</Link>

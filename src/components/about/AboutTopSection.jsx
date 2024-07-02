@@ -1,5 +1,6 @@
 import React from "react";
 import MainImg from "../../assets/images/about_main.png";
+import FactsSection from "./FactsSection";
 
 const AboutTopSection = () => {
   return (
@@ -12,8 +13,8 @@ const AboutTopSection = () => {
             alt="Main Img"
           />
         </div>
-        <div className="lg:flex">
-          <h1 className="mb-5 w-1/2 text-[28px] font-medium leading-[105%] md:text-[34px] md:leading-[110%] lg:mb-0 lg:text-5xl">
+        <div className="mb-[60px] md:mb-[120px] lg:mb-[150px] lg:flex">
+          <h1 className="mb-5 text-[28px] font-medium leading-[105%] sm:w-1/2 md:text-[34px] md:leading-[110%] lg:mb-0 lg:text-5xl">
             Глобал медикал трейд
           </h1>
           <div className="lg:w-1/2">
@@ -34,6 +35,7 @@ const AboutTopSection = () => {
             </p>
           </div>
         </div>
+        <FactsSection />
       </div>
     </div>
   );

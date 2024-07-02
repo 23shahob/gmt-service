@@ -67,7 +67,7 @@ const Header = () => {
       <div className="mx-auto hidden max-w-[1440px] items-center justify-between px-4 md:flex md:px-5 lg:px-4">
         <ul className="flex items-center md:gap-[10px] md:gap-y-[5px] lg:gap-5 lg:py-[10px]">
           <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
-            <Space direction="vertical">
+            {/* <Space direction="vertical">
               <Space wrap>
                 <Dropdown
                   menu={{
@@ -75,12 +75,13 @@ const Header = () => {
                   }}
                   placement="bottom"
                 >
-                  <NavLink className="hover:text-[#07745E]" to="/about">
-                    О компании
-                  </NavLink>
+                  
                 </Dropdown>
               </Space>
-            </Space>
+            </Space> */}
+            <NavLink className="hover:text-[#07745E]" to="/about">
+              О компании
+            </NavLink>
           </li>
           <li className="font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E] md:text-[10px] lg:text-[12px]">
             <NavLink to="/delivery">Доставка</NavLink>
@@ -124,7 +125,7 @@ const Header = () => {
           </div>
           <div className="relative flex h-[34px] w-full rounded-[50px] bg-[#D5D1E1] px-[2px] py-[1px] md:h-8 md:w-[403px] lg:h-[41px] lg:w-[614px]">
             <div className="flex h-full w-full gap-3 rounded-[50px] bg-white md:w-[360px] lg:w-[565px]">
-              <div className="flex relative items-center gap-1 rounded-[50px] bg-[#EFEFEF] px-[10px] md:px-[15px] md:py-[7px] lg:py-[10px]">
+              <div className="relative flex items-center gap-1 rounded-[50px] bg-[#EFEFEF] px-[10px] md:px-[15px] md:py-[7px] lg:py-[10px]">
                 <AllCategories text={"Все категории"} />
                 <i>
                   <svg

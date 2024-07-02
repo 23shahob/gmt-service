@@ -5,7 +5,7 @@ import HomeStaticSection from "../components/home/HomeStaticSection";
 import Products from "../components/home/Products";
 import Clients from "../components/home/Clients";
 import Brends from "../components/home/Brends";
-import Accordion from "../components/home/Accordion";
+import AccordionSection from "../components/home/AccordionSection";
 import CompanyNews from "../components/home/CompanyNews";
 import FooterTop from "../components/home/FooterTop";
 import Location from "../components/home/Location";
@@ -46,7 +46,7 @@ const Catalog = () => {
         <Brends />
       </div>
       <div className="pb-[150px]">
-        <Accordion />
+        <AccordionSection />
       </div>
       <div className="pb-[150px]">
         <CompanyNews />

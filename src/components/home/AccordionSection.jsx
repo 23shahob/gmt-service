@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
-const Accordion = () => {
+const AccordionSection = () => {
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -89,4 +89,4 @@ const Accordion = () => {
   );
 };
 
-export default Accordion;
+export default AccordionSection;
