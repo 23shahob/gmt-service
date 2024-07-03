@@ -10,6 +10,9 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { Dropdown, Space } from "antd";
 import AllCategories from "./AllCategories";
 import HeaderBottom from "./header/HeaderBottom";
+import { RxHamburgerMenu } from "react-icons/rx";
+import { FiPhone } from "react-icons/fi";
+
 const Header = () => {
   const items = [
     {
@@ -112,16 +115,22 @@ const Header = () => {
         </div>
       </div>
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
-      <div className="mx-auto flex max-w-[1440px] items-center justify-between px-4 md:h-[52px] md:px-5 lg:h-[93px] lg:px-4">
-        <div className="mb-4 mt-3 items-center md:mt-0 md:flex md:gap-8 lg:gap-10">
-          <div className="mb-3 md:mb-0">
-            <Link to="/">
-              <img
-                className="md:h-[30px] md:w-[73px] lg:h-10 lg:w-24"
-                src={SiteLogo}
-                alt="Site Logo"
-              />
-            </Link>
+      <div className="mx-auto max-w-[1440px] items-center justify-between px-4 md:flex md:h-[52px] md:px-5 lg:h-[93px] lg:px-4">
+        <div className="mb-4 mt-3 block items-center md:flex md:gap-8 lg:gap-10">
+          <div className="flex items-center justify-between">
+            <div className="mb-3 md:mb-0">
+              <Link to="/">
+                <img
+                  className="md:h-[30px] md:w-[73px] lg:h-10 lg:w-24"
+                  src={SiteLogo}
+                  alt="Site Logo"
+                />
+              </Link>
+            </div>
+            <div className="flex gap-5 md:hidden">
+              <FiPhone className="h-6 w-6" />
+              <RxHamburgerMenu className="h-6 w-6" />
+            </div>
           </div>
           <div className="relative flex h-[34px] w-full rounded-[50px] bg-[#D5D1E1] px-[2px] py-[1px] md:h-8 md:w-[403px] lg:h-[41px] lg:w-[614px]">
             <div className="flex h-full w-full gap-3 rounded-[50px] bg-white md:w-[360px] lg:w-[565px]">

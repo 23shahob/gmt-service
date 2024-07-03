@@ -8,6 +8,9 @@ import Footer from "./components/Footer";
 import Catalog from "./pages/Catalog";
 import Delivery from "./pages/Delivery";
 import Services from "./pages/Services";
+import Payment from "./pages/Payment";
+import Guarantee from "./pages/Guarantee";
+import Blog from "./pages/Blog";
 
 const App = () => {
   return (
@@ -18,6 +21,9 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/delivery" element={<Delivery />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/payment" element={<Payment />} />
+        <Route path="/guarantee" element={<Guarantee />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/catalog" element={<Catalog />} />
       </Routes>
       <Footer />

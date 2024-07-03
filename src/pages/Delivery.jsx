@@ -19,7 +19,7 @@ const Delivery = () => {
             Главная
           </Link>
           <MdOutlineKeyboardArrowRight className="h-5 w-5 text-[#7A7687]" />
-          <p className="text-sm font-normal">О компании</p>
+          <p className="text-sm font-normal">Доставка</p>
         </div>
       </div>
       <div className="mb-[60px] md:mb-[120px] lg:mb-[150px]">

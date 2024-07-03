@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import OfficeTools from "../components/home/OfficeTools";
 import HomeStaticSection from "../components/home/HomeStaticSection";
 import Products from "../components/home/Products";
@@ -10,7 +11,6 @@ import CompanyNews from "../components/home/CompanyNews";
 import FooterTop from "../components/home/FooterTop";
 import Location from "../components/home/Location";
 import CatalogProducts from "../components/catalog/CatalogProducts";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Catalog = () => {
   useEffect(() => {

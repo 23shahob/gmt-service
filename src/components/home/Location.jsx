@@ -12,7 +12,7 @@ const Location = () => {
             className="h-full w-full rounded-[10px]"
           ></iframe>
         </div>
-        <div className="w-full rounded-[10px] border border-[#E5E2EE] p-5 md:w-1/2 lg:p-10">
+        <div className="w-full rounded-[10px] border bg-white border-[#E5E2EE] p-5 md:w-1/2 lg:p-10">
           <h1 className="mb-2 text-lg font-medium leading-[120%] md:mb-5 md:text-xl lg:mb-6 lg:text-[30px]">
             Остались вопросы?
           </h1>
