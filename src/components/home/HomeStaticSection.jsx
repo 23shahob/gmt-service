@@ -7,8 +7,8 @@ const HomeStaticSection = () => {
         Почему выбирают нас?
       </h3>
       <div className="grid grid-cols-2 gap-[10px] md:grid-cols-4">
-        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] md:h-[175px] lg:h-80">
-          <i className="mb-10">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] p-5 md:h-[175px] lg:h-80">
+          <i className="mb-5 md:mb-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="38"
@@ -27,8 +27,8 @@ const HomeStaticSection = () => {
             Быстрая доставка
           </p>
         </div>
-        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
-          <i className="mb-10">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] p-5 lg:h-[320px]">
+          <i className="mb-5 md:mb-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="65"
@@ -79,8 +79,8 @@ const HomeStaticSection = () => {
             Весь товар сертифицирован
           </p>
         </div>
-        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
-          <i className="mb-10">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] p-5 lg:h-[320px]">
+          <i className="mb-5 md:mb-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="68"
@@ -101,8 +101,8 @@ const HomeStaticSection = () => {
             Гибкая система скидок
           </p>
         </div>
-        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] lg:h-[320px]">
-          <i className="mb-10">
+        <div className="flex h-[160px] w-full flex-col items-center justify-center rounded-[10px] border border-[E5E2EE] p-5 lg:h-[320px]">
+          <i className="mb-5 md:mb-7">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="33"

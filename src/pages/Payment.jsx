@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import PaymentTopSection from "../components/payment/PaymentTopSection";
@@ -7,6 +7,9 @@ import DeliveryTerms from "../components/payment/DeliveryTerms";
 import Location from "../components/home/Location";
 
 const Payment = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <div className="mx-auto mb-10 max-w-[1440px] px-4 md:mb-12 md:px-5 lg:mb-24 lg:px-4">

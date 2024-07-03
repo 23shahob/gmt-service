@@ -11,6 +11,9 @@ import Services from "./pages/Services";
 import Payment from "./pages/Payment";
 import Guarantee from "./pages/Guarantee";
 import Blog from "./pages/Blog";
+import Stock from "./pages/Stock";
+import TurnKey from "./pages/TurnKey";
+import Manufacturers from "./pages/Manufacturers";
 
 const App = () => {
   return (
@@ -25,6 +28,9 @@ const App = () => {
         <Route path="/guarantee" element={<Guarantee />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/catalog" element={<Catalog />} />
+        <Route path="/stock" element={<Stock />} />
+        <Route path="/turnkey" element={<TurnKey />} />
+        <Route path="/manufacturer" element={<Manufacturers />} />
       </Routes>
       <Footer />
     </>

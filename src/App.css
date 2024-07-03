@@ -15,5 +15,22 @@ html {
 }
 
 .active {
-  color: black;
+  color: #088269;
+}
+.scrollbar::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #E5E2EE;
+  border-radius: 5px;
+  height: 50px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

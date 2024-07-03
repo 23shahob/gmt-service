@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import AboutTopSection from "../components/about/AboutTopSection";
@@ -11,6 +11,9 @@ import Certificats from "../components/about/Certificats";
 import Location from "../components/home/Location";
 
 const About = () => {
+   useEffect(() => {
+     window.scrollTo(0, 0);
+   }, []);
   return (
     <div>
       <div className="mx-auto max-w-[1440px] md:px-5 lg:px-4">

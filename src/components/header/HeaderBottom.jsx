@@ -1,144 +1,144 @@
 import React from "react";
 
 import { Dropdown, Space } from "antd";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FiPhone } from "react-icons/fi";
 
 const items = [
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Реанимация
-      </Link>
+      </NavLink>
     ),
     key: "0",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Хирургия
-      </Link>
+      </NavLink>
     ),
     key: "1",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Офтальмология
-      </Link>
+      </NavLink>
     ),
     key: "2",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Лабораторная диагностика
-      </Link>
+      </NavLink>
     ),
     key: "3",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Акушерство
-      </Link>
+      </NavLink>
     ),
     key: "4",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Гинекология
-      </Link>
+      </NavLink>
     ),
     key: "5",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Гистология
-      </Link>
+      </NavLink>
     ),
     key: "6",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Косметология
-      </Link>
+      </NavLink>
     ),
     key: "7",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Оториноларингология
-      </Link>
+      </NavLink>
     ),
     key: "8",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Рентгенология и томография
-      </Link>
+      </NavLink>
     ),
     key: "9",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Стерилизация
-      </Link>
+      </NavLink>
     ),
     key: "10",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Физиотерапия и реабилитация
-      </Link>
+      </NavLink>
     ),
     key: "11",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Функциональная диагностика
-      </Link>
+      </NavLink>
     ),
     key: "12",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Эндоскопия
-      </Link>
+      </NavLink>
     ),
     key: "13",
   },
   { type: "divider" },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Новинки
-      </Link>
+      </NavLink>
     ),
     key: "15",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Распродажи
-      </Link>
+      </NavLink>
     ),
     key: "16",
   },
   {
     label: (
-      <Link className="text-sm font-normal" to="#">
+      <NavLink className="text-sm font-normal" to="#">
         Кабинеты под ключ
-      </Link>
+      </NavLink>
     ),
     key: "17",
   },
@@ -146,7 +146,7 @@ const items = [
 
 const HeaderBottom = () => {
   return (
-    <div className="mx-auto x-4 hidden md:flex max-w-[1440px] items-center justify-between md:h-[52px] md:px-5 lg:h-[62px] lg:px-4">
+    <div className="x-4 mx-auto hidden max-w-[1440px] items-center justify-between md:flex md:h-[52px] md:px-5 lg:h-[62px] lg:px-4">
       <div className="flex items-center gap-[5px]">
         <i className="h-[17px] w-[17px]">
           <svg
@@ -166,7 +166,7 @@ const HeaderBottom = () => {
         </i>
         <ul className="flex items-center gap-[25px]">
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Space direction="vertical">
+            {/* <Space direction="vertical">
               <Space wrap>
                 <Dropdown
                   menu={{
@@ -174,30 +174,33 @@ const HeaderBottom = () => {
                   }}
                   placement="bottomLeft"
                 >
-                  <Link to="/catalog" className="hover:text-[#07745E]">
+                  <NavLink to="/catalog" className="hover:text-[#07745E]">
                     Каталог
-                  </Link>
+                  </NavLink>
                 </Dropdown>
               </Space>
-            </Space>
+            </Space> */}
+            <NavLink to="/catalog" className="hover:text-[#07745E]">
+              Каталог
+            </NavLink>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Link to="#">Производители</Link>
+            <NavLink to="/manufacturer">Производители</NavLink>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Link to="#">Кабинеты под ключ</Link>
+            <NavLink to="/turnkey">Кабинеты под ключ</NavLink>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Link to="/services">Услуги</Link>
+            <NavLink to="/services">Услуги</NavLink>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Link to="#">Акции</Link>
+            <NavLink to="/stock">Акции</NavLink>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Link to="#">Покупателям</Link>
+            <NavLink to="">Покупателям</NavLink>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <Link to="#">Контакты</Link>
+            <NavLink to="">Контакты</NavLink>
           </li>
         </ul>
       </div>
@@ -231,7 +234,7 @@ const HeaderBottom = () => {
           </span>
         </a>
         <a
-          className="rounded-[50px] flex items-center bg-[#088269] py-[11px] transition duration-300 ease-in-out hover:bg-[#07745E] md:p-2 lg:px-[30px]"
+          className="flex items-center rounded-[50px] bg-[#088269] py-[11px] transition duration-300 ease-in-out hover:bg-[#07745E] md:p-2 lg:px-[30px]"
           href="#"
         >
           <span className="hidden text-sm font-semibold leading-normal text-white lg:block">

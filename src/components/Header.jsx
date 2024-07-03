@@ -115,7 +115,7 @@ const Header = () => {
         </div>
       </div>
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
-      <div className="mx-auto max-w-[1440px] items-center justify-between px-4 md:flex md:h-[52px] md:px-5 lg:h-[93px] lg:px-4">
+      <div className="sticky top-0 z-50 mx-auto w-full max-w-[1440px] items-center justify-between bg-[#F8F7F3] px-4 md:flex md:h-[52px] md:px-5 lg:h-[93px] lg:px-4">
         <div className="mb-4 mt-3 block items-center md:flex md:gap-8 lg:gap-10">
           <div className="flex items-center justify-between">
             <div className="mb-3 md:mb-0">
@@ -152,7 +152,7 @@ const Header = () => {
                 </i>
               </div>
               <input
-                className="h-full rounded-[50px] text-sm font-normal leading-normal text-[#7A7687] outline-none lg:w-[185px]"
+                className="h-full w-3/5 text-sm font-normal leading-normal text-[#7A7687] outline-none"
                 type="search"
                 placeholder="Поиск"
               />
