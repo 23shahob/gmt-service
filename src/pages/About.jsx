@@ -16,7 +16,7 @@ const About = () => {
    }, []);
   return (
     <div>
-      <div className="mx-auto max-w-[1440px] md:px-5 lg:px-4">
+      <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
         <div className="mb-5 flex items-center gap-2 py-5">
           <Link to="/" className="text-sm font-normal text-[#7A7687]">
             Главная

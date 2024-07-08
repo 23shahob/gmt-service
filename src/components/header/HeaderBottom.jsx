@@ -197,16 +197,13 @@ const HeaderBottom = () => {
             <NavLink to="/stock">Акции</NavLink>
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <NavLink to="">Покупателям</NavLink>
-          </li>
-          <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            <NavLink to="">Контакты</NavLink>
+            <NavLink to="/contact">Контакты</NavLink>
           </li>
         </ul>
       </div>
-      <div className="group flex md:gap-[10px] lg:gap-3">
+      <div className="flex md:gap-[10px] lg:gap-3">
         <a
-          className="flex items-center font-semibold leading-normal group-hover:text-[#07745E] md:gap-[3px] md:text-[12px] lg:gap-1 lg:text-sm"
+          className="flex items-center font-semibold leading-normal transition duration-300 ease-in-out hover:text-[#07745E] md:gap-[3px] md:text-[12px] lg:gap-1 lg:text-sm"
           href="#"
         >
           Москва

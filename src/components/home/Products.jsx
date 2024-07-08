@@ -3,6 +3,8 @@ import { ProductsData } from "../../assets/data/data";
 import { IoBarChartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cart/cartReducer";
 
 const Products = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -17,6 +19,18 @@ const Products = () => {
       setCurrentSlide((prev) => (prev - 1 + totalItems) % totalItems);
     }
   };
+  const filterStock = (stock) => {
+    switch (stock) {
+      case "Новинка":
+        return "text-[#088269] bg-[#E1EFE6] border-[#088269]";
+      case "Хит продаж":
+        return "text-[#59599A] bg-[#E6E6FD] border-[#59599A]";
+
+      default:
+        return "text-[#AD7B00] bg-[#FFE095] border-[#AD7B00]";
+    }
+  };
+  const dispatch = useDispatch();
   return (
     <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
       <h2 className="mb-6 text-lg font-medium leading-[120%] md:mb-8 md:text-xl lg:mb-10 lg:text-[30px]">
@@ -33,14 +47,16 @@ const Products = () => {
             {ProductsData.map((item) => (
               <div
                 key={item.id}
-                className="mx-2 flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3] md:w-[236px] lg:w-80"
+                className="mx-2 w-[236px] flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3] lg:w-80"
               >
-                <div className="relative flex h-[172px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white pt-10 lg:h-[280px]">
+                <div className="relative h-[172px] w-full rounded-t-[10px] border-b border-[#E5E2EE] bg-white pt-10 lg:h-[280px]">
                   <div className="absolute top-[10px] flex w-full justify-between px-[10px] lg:top-4 lg:px-4">
-                    <button className="rounded-[60px] border border-[#088269] bg-[#E1EFE6] px-[10px] py-1 text-[12px] font-semibold text-[#088269] lg:text-sm">
-                      Новинка
-                    </button>
-                    <div className="flex gap-[6px] lg:gap-[10px]">
+                    <span
+                      className={`absolute left-2 top-2 rounded-[76px] border px-2 py-1 text-[12px] font-semibold lg:left-4 lg:text-sm ${filterStock(item.stock)}`}
+                    >
+                      {item.stock}
+                    </span>
+                    <div className="absolute right-2 top-2 flex gap-[6px] lg:right-4 lg:gap-[10px]">
                       <button className="transition duration-300 ease-in-out hover:text-[#088269]">
                         <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                       </button>
@@ -49,16 +65,20 @@ const Products = () => {
                       </button>
                     </div>
                   </div>
-                  <img
-                    src={item.img}
-                    alt="Slider Img"
-                    className="h-full w-full rounded-t-[10px] object-cover"
-                  />
+                  <Link to={`/product/${item.id}`}>
+                    <img
+                      className="h-full w-full object-contain"
+                      src={item.img}
+                      alt="Product Img"
+                    />
+                  </Link>
                 </div>
                 <div className="px-3 py-4 lg:py-5">
-                  <p className="mb-1 text-[16px] font-semibold lg:mb-[10px] lg:text-lg">
-                    {item.title}
-                  </p>
+                  <Link to={`/product/${item.id}`}>
+                    <p className="mb-1 text-[16px] font-semibold lg:mb-[10px] lg:text-lg">
+                      {item.title}
+                    </p>
+                  </Link>
                   <div className="mb-4 flex flex-col lg:mb-7">
                     <span className="text-[10px] font-normal text-[#7A7687] lg:text-[12px]">
                       Артикул: 213134
@@ -68,9 +88,12 @@ const Products = () => {
                     </span>
                   </div>
                   <p className="mb-2 text-[16px] font-semibold lg:mb-4 lg:text-[18px]">
-                    300 000 руб.
+                    {item.price.toFixed(3) + " руб."}
                   </p>
-                  <button className="w-full rounded-[50px] border border-[#D5D1E1] py-2 text-[12px] font-semibold text-[#088269] transition duration-300 ease-in-out hover:border-[#088269] lg:py-3 lg:text-sm">
+                  <button
+                    onClick={() => dispatch(addToCart(item))}
+                    className="w-full rounded-[50px] border border-[#D5D1E1] py-2 text-[12px] font-semibold text-[#088269] transition duration-300 ease-in-out hover:border-[#088269] lg:py-3 lg:text-sm"
+                  >
                     Добавить в корзину
                   </button>
                 </div>

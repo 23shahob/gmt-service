@@ -62,7 +62,6 @@ const Location = () => {
                   id="standard-multiline-flexible"
                   label="Ваше имя"
                   required
-                  multiline
                   maxRows={1}
                   variant="standard"
                 />
@@ -71,7 +70,6 @@ const Location = () => {
                   id="standard-multiline-flexible"
                   label="Ваш телефон"
                   required
-                  multiline
                   maxRows={1}
                   variant="standard"
                 />
@@ -80,7 +78,6 @@ const Location = () => {
                   id="standard-multiline-flexible"
                   label="Ваш email"
                   required
-                  multiline
                   maxRows={1}
                   variant="standard"
                 />
@@ -89,14 +86,13 @@ const Location = () => {
                   required
                   id="standard-multiline-flexible"
                   label="Ваш вопрос"
-                  multiline
                   maxRows={1}
                   variant="standard"
                 />
               </div>
             </Box>
             <div className="mt-2 lg:flex lg:gap-7">
-              <button className="mb-3 rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E] lg:px-[30px] lg:py-[11px] lg:text-sm">
+              <button type="submit" className="mb-3 rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E] lg:px-[30px] lg:py-[11px] lg:text-sm">
                 Отправить
               </button>
               <p className="text-[10px] font-medium text-[#7A7687] lg:text-[12px]">

@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Header from "./components/Header";
@@ -14,8 +14,19 @@ import Blog from "./pages/Blog";
 import Stock from "./pages/Stock";
 import TurnKey from "./pages/TurnKey";
 import Manufacturers from "./pages/Manufacturers";
+import Contact from "./pages/Contact";
+import Certificates from "./pages/Certificates";
+import CatalogGoods from "./pages/CatalogGoods";
+import Cart from "./redux/cart/Cart";
+import Wishlist from "./pages/Wishlist";
+import ProductView from "./pages/ProductView";
+import Compare from "./pages/Compare";
+import Personal from "./pages/Personal";
+import { useSelector } from "react-redux";
 
 const App = () => {
+  // const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+
   return (
     <>
       <Header />
@@ -31,6 +42,17 @@ const App = () => {
         <Route path="/stock" element={<Stock />} />
         <Route path="/turnkey" element={<TurnKey />} />
         <Route path="/manufacturer" element={<Manufacturers />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/certificates" element={<Certificates />} />
+        <Route path="/:product" element={<CatalogGoods />} />
+        <Route path="/product/:productId" element={<ProductView />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/wishlist" element={<Wishlist />} />
+        <Route path="/compare" element={<Compare />} />
+        <Route
+          path="/personal"
+          // element={isAuthenticated ? <Personal /> : <Navigate to="/" />}
+        />
       </Routes>
       <Footer />
     </>

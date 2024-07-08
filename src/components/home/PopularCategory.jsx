@@ -1,10 +1,10 @@
 import React from "react";
-import { CategoryData } from "../../assets/data/data";
+import { CatalogData, CategoryData } from "../../assets/data/data";
 import { Link } from "react-router-dom";
 
 const PopularCategory = () => {
   return (
-    <div className="mx-auto px-4 max-w-[1440px] md:px-5 lg:px-4">
+    <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
       <div className="mb-10 flex items-center justify-between">
         <h2 className="text-lg font-medium leading-[120%] md:text-xl lg:text-[30px]">
           Популярные категории
@@ -22,18 +22,20 @@ const PopularCategory = () => {
               key={item.id}
               className="w-full flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
             >
-              <div className="flex w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white lg:h-[220px]">
-                <img
-                  src={item.image}
-                  alt="Slider Img"
-                  className="rounded-t-[10px] object-cover"
-                />
-              </div>
-              <div className="px-4 py-4 lg:px-6 lg:py-5">
-                <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
-                  {item.text}
-                </p>
-              </div>
+              <Link to={`/${item.title}`}>
+                <div className="flex w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white lg:h-[220px]">
+                  <img
+                    src={item.image}
+                    alt="Slider Img"
+                    className="rounded-t-[10px] object-cover"
+                  />
+                </div>
+                <div className="px-4 py-4 lg:px-6 lg:py-5">
+                  <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+                    {item.text}
+                  </p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
@@ -43,18 +45,20 @@ const PopularCategory = () => {
               key={item.id}
               className="w-full flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
             >
-              <div className="flex h-[515px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
-                <img
-                  src={item.image}
-                  alt="Slider Img"
-                  className="rounded-t-[10px] object-cover"
-                />
-              </div>
-              <div className="px-4 py-4 lg:px-6 lg:py-5">
-                <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
-                  {item.text}
-                </p>
-              </div>
+              <Link to={`/${item.title}`}>
+                <div className="flex h-[515px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
+                  <img
+                    src={item.image}
+                    alt="Slider Img"
+                    className="rounded-t-[10px] object-cover"
+                  />
+                </div>
+                <div className="px-4 py-4 lg:px-6 lg:py-5">
+                  <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+                    {item.text}
+                  </p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
@@ -64,18 +68,20 @@ const PopularCategory = () => {
               key={item.id}
               className="w-full flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
             >
-              <div className="flex h-[220px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
-                <img
-                  src={item.image}
-                  alt="Slider Img"
-                  className="rounded-t-[10px] object-cover"
-                />
-              </div>
-              <div className="px-4 py-4 lg:px-6 lg:py-5">
-                <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
-                  {item.text}
-                </p>
-              </div>
+              <Link to={`/${item.title}`}>
+                <div className="flex h-[220px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
+                  <img
+                    src={item.image}
+                    alt="Slider Img"
+                    className="rounded-t-[10px] object-cover"
+                  />
+                </div>
+                <div className="px-4 py-4 lg:px-6 lg:py-5">
+                  <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+                    {item.text}
+                  </p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>
@@ -85,18 +91,20 @@ const PopularCategory = () => {
               key={item.id}
               className="w-full flex-shrink-0 rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
             >
-              <div className="flex h-[220px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
-                <img
-                  src={item.image}
-                  alt="Slider Img"
-                  className="rounded-t-[10px] object-cover"
-                />
-              </div>
-              <div className="px-4 py-4 lg:px-6 lg:py-5">
-                <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
-                  {item.text}
-                </p>
-              </div>
+              <Link to={`/${item.title}`}>
+                <div className="flex h-[220px] w-full items-center justify-center rounded-t-[10px] border-b border-[#E5E2EE] bg-white">
+                  <img
+                    src={item.image}
+                    alt="Slider Img"
+                    className="rounded-t-[10px] object-cover"
+                  />
+                </div>
+                <div className="px-4 py-4 lg:px-6 lg:py-5">
+                  <p className="font-medium md:text-sm md:leading-[118%] lg:text-[16px] lg:leading-[140%]">
+                    {item.text}
+                  </p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

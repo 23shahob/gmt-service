@@ -234,18 +234,20 @@ const CatalogProducts = () => {
               key={product.id}
               className="rounded-[10px] border border-[#E5E2EE] bg-[#F8F7F3]"
             >
-              <div className="h-[154px] w-full rounded-t-[10px] border-b border-[#E5E2EE] xl:h-56">
-                <img
-                  className="h-full w-full rounded-t-[10px] object-cover"
-                  src={product.img}
-                  alt="Product Img"
-                />
-              </div>
-              <div className="px-2 py-2 md:px-4 md:py-4 xl:px-6 xl:py-8">
-                <p className="text-[12px] font-medium leading-[140%] md:text-sm lg:text-[16px]">
-                  {product.title}
-                </p>
-              </div>
+              <Link to={`/${product.title}`}>
+                <div className="h-[154px] w-full rounded-t-[10px] border-b border-[#E5E2EE] xl:h-56">
+                  <img
+                    className="h-full w-full rounded-t-[10px] object-cover"
+                    src={product.img}
+                    alt="Product Img"
+                  />
+                </div>
+                <div className="px-2 py-2 md:px-4 md:py-4 xl:px-6 xl:py-8">
+                  <p className="text-[12px] font-medium leading-[140%] md:text-sm lg:text-[16px]">
+                    {product.title}
+                  </p>
+                </div>
+              </Link>
             </div>
           ))}
         </div>

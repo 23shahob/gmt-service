@@ -1,33 +1,7 @@
 import React from "react";
-import Service1 from "../../assets/images/service1.png";
-import Service2 from "../../assets/images/service2.png";
-import Service3 from "../../assets/images/service3.png";
-import Service4 from "../../assets/images/service4.png";
-import Service5 from "../../assets/images/service5.png";
-import Service6 from "../../assets/images/service6.png";
-import Service7 from "../../assets/images/service7.png";
-import Service8 from "../../assets/images/service8.png";
+import { Cards } from "../../assets/data/data";
 
 const ServiceCards = () => {
-  const Cards = [
-    { id: 1, img: Service1, title: "Апробация" },
-    { id: 2, img: Service2, title: "Помощь в подборе оборудования" },
-    { id: 3, img: Service3, title: "Помощь инженеров в настройке" },
-    { id: 4, img: Service4, title: "Пуско-наладочные работы" },
-    { id: 5, img: Service5, title: "Обучение работе с оборудованием" },
-    { id: 6, img: Service6, title: "Подменный аппарат" },
-    {
-      id: 7,
-      img: Service7,
-      title:
-        "Работа с учебными центрами повышения квалификации медицинского персонала",
-    },
-    {
-      id: 8,
-      img: Service8,
-      title: "Организация обучения врачей на собственной территории",
-    },
-  ];
   return (
     <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
       <h1 className="mb-8 text-[28px] font-medium leading-[105%] md:text-[34px] md:leading-[110%] lg:mb-10 lg:text-5xl">

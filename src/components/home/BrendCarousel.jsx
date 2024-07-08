@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const BrendCarousel = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -142,9 +143,11 @@ const BrendCarousel = () => {
             </i>
           </button>
         </div>
-        <button className="rounded-[50px] bg-[#088269] px-5 py-2 text-[#F8F7F3] outline-none transition duration-300 ease-in-out hover:bg-[#07745E] focus:outline-none md:text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
-          Сертификаты
-        </button>
+        <Link to="/certificates">
+          <button className="rounded-[50px] bg-[#088269] px-5 py-2 text-[#F8F7F3] outline-none transition duration-300 ease-in-out hover:bg-[#07745E] focus:outline-none md:text-[12px] lg:px-[30px] lg:py-[11px] lg:text-sm">
+            Сертификаты
+          </button>
+        </Link>
       </div>
     </div>
   );

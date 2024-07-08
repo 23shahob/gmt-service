@@ -30,7 +30,7 @@ const BlogData = () => {
             >
               <div className="w-full lg:w-5/12">
                 <img
-                  className="h-full w-full rounded-t-[10px] object-cover lg:rounded-l-[10px] lg:rounded-t-none"
+                  className="h-full w-full rounded-t-[10px] object-cover lg:rounded-l-[10px] lg:rounded-tl-[10px] lg:rounded-t-none"
                   src={item.img}
                   alt="Product Img"
                 />

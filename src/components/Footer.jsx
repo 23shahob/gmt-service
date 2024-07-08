@@ -13,30 +13,30 @@ const Footer = () => {
             <div className="block gap-5 md:flex xl:gap-[60px]">
               <ul className="flex flex-col gap-y-1 lg:gap-y-2">
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">О компании</Link>
+                  <Link to="/about">О компании</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">Сертификаты</Link>
+                  <Link to="/certificates">Сертификаты</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Вакансии</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">Гарантии</Link>
+                  <Link to="guarantee">Гарантии</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">Услуги</Link>
+                  <Link to="/services">Услуги</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">Акции</Link>
+                  <Link to="/stock">Акции</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">Доставка</Link>
+                  <Link to="/delivery">Доставка</Link>
                 </li>
               </ul>
               <ul className="flex flex-col gap-y-1 lg:gap-y-2">
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">Оплата</Link>
+                  <Link to="/payment">Оплата</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
                   <Link to="#">Возврат</Link>
@@ -51,7 +51,7 @@ const Footer = () => {
                   <Link to="#">Отзывы</Link>
                 </li>
                 <li className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm">
-                  <Link to="#">Блог</Link>
+                  <Link to="/blog">Блог</Link>
                 </li>
               </ul>
             </div>
@@ -185,7 +185,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mb-14 pt-[10px] lg:pt-4">
-          <ul className="md:flex block justify-between">
+          <ul className="block justify-between md:flex">
             <li className="mb-4 md:mb-0">
               <Link to="/">
                 <svg
@@ -291,7 +291,7 @@ const Footer = () => {
                 </Link>
               </div>
             </li>
-            <li className="flex mb-4 md:mb-0 flex-col gap-y-1 lg:gap-y-2">
+            <li className="mb-4 flex flex-col gap-y-1 md:mb-0 lg:gap-y-2">
               <Link
                 to="#"
                 className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
@@ -311,7 +311,7 @@ const Footer = () => {
                 Реквизиты
               </Link>
             </li>
-            <li className="flex mb-4 md:mb-0 flex-col gap-y-1 lg:gap-y-2">
+            <li className="mb-4 flex flex-col gap-y-1 md:mb-0 lg:gap-y-2">
               <Link
                 to="#"
                 className="text-[12px] font-normal text-[#F8F7F3] lg:text-sm"
@@ -467,11 +467,11 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="md:flex block items-center justify-between pb-3 lg:pb-5">
-          <p className="font-normal text-[#f8f7f3] mb-4 md:mb-0 text-[10px] lg:text-[12px]">
+        <div className="block items-center justify-between pb-3 md:flex lg:pb-5">
+          <p className="mb-4 text-[10px] font-normal text-[#f8f7f3] md:mb-0 lg:text-[12px]">
             © 2022 Медоборудование <br /> Все права защищены
           </p>
-          <p className="font-normal text-[#f8f7f3] opacity-60 text-[10px] lg:text-[12px]">
+          <p className="text-[10px] font-normal text-[#f8f7f3] opacity-60 lg:text-[12px]">
             Информация на данном сайте носит справочный характер и не является
             публичной офертой, определяемой положениями Статьи 437 Гражданского
             кодекса Российской Федерации

@@ -17,6 +17,7 @@ html {
 .active {
   color: #088269;
 }
+
 .scrollbar::-webkit-scrollbar {
   width: 4px;
 }
