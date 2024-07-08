@@ -22,7 +22,7 @@ const Contact = () => {
             Главная
           </Link>
           <MdOutlineKeyboardArrowRight className="h-5 w-5 text-[#7A7687]" />
-          <p className="text-sm font-normal">О компании</p>
+          <p className="text-sm font-normal">Контакты</p>
         </div>
       </div>
 
@@ -154,13 +154,13 @@ const Contact = () => {
                     Мы в соцсетях
                   </h2>
                   <ul className="flex gap-[10px]">
-                    <li className="flex h-[37px] w-[37px] cursor-pointer items-center justify-center rounded-lg bg-[#088269] hover:bg-[#07745E]">
+                    <li className="flex h-[37px] w-[37px] cursor-pointer items-center justify-center rounded-lg bg-[#088269] transition duration-300 ease-in-out hover:bg-[#07745E]">
                       <SlSocialVkontakte className="h-5 w-5 fill-white text-white" />
                     </li>
-                    <li className="flex h-[37px] w-[37px] cursor-pointer items-center justify-center rounded-lg bg-[#088269] hover:bg-[#07745E]">
+                    <li className="flex h-[37px] w-[37px] cursor-pointer items-center justify-center rounded-lg bg-[#088269] transition duration-300 ease-in-out hover:bg-[#07745E]">
                       <FaTelegramPlane className="h-5 w-5 fill-white text-white" />
                     </li>
-                    <li className="flex h-[37px] w-[37px] cursor-pointer items-center justify-center rounded-lg bg-[#088269] hover:bg-[#07745E]">
+                    <li className="flex h-[37px] w-[37px] cursor-pointer items-center justify-center rounded-lg bg-[#088269] transition duration-300 ease-in-out hover:bg-[#07745E]">
                       <FaWhatsapp className="h-5 w-5 fill-white text-white" />
                     </li>
                   </ul>
@@ -273,7 +273,7 @@ const Contact = () => {
                 className="h-full w-full rounded-[10px]"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d265.6097804603199!2d69.20378307237195!3d41.28543031743791!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8ba578f4f58d%3A0xd7a2ecf23413b7a0!2sNajot%20Ta&#39;lim%20Chilonzor%20Filial!5e0!3m2!1sru!2s!4v1719776352557!5m2!1sru!2s"
               ></iframe>
-              <button className="absolute bottom-4 right-4 rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold leading-[138%] text-[#F8F7F3] md:leading-[140%] lg:bottom-5 lg:right-5 lg:px-[30px] lg:py-[11px] lg:text-sm">
+              <button className="absolute bottom-4 right-4 rounded-[50px] bg-[#088269] px-5 py-2 text-[12px] font-semibold leading-[138%] text-[#F8F7F3] transition duration-300 ease-in-out hover:bg-[#07745E] md:leading-[140%] lg:bottom-5 lg:right-5 lg:px-[30px] lg:py-[11px] lg:text-sm">
                 Построить маршрут
               </button>
             </div>
