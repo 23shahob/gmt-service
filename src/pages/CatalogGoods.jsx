@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Draeger1 from "../assets/images/draeger1.png";
-import Draeger2 from "../assets/images/draeger2.png";
+import Draeger1 from "../assets/images/png/draeger1.png";
+import Draeger2 from "../assets/images/png/draeger2.png";
 import CatalogProductView from "../components/catalog/CatalogProductView";
 import Brends from "../components/home/Brends";
 import AccordionSection from "../components/home/AccordionSection";

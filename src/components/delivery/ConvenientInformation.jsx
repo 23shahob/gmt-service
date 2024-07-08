@@ -1,8 +1,8 @@
 import React from "react";
-import Symbol1 from "../../assets/images/symbol1.svg";
-import Symbol2 from "../../assets/images/symbol2.svg";
-import Symbol3 from "../../assets/images/symbol3.svg";
-import Symbol4 from "../../assets/images/symbol4.svg";
+import Symbol1 from "../../assets/images/svg/symbol1.svg";
+import Symbol2 from "../../assets/images/svg/symbol2.svg";
+import Symbol3 from "../../assets/images/svg/symbol3.svg";
+import Symbol4 from "../../assets/images/svg/symbol4.svg";
 
 const ConvenientInformation = () => {
   return (

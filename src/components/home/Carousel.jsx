@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import SliderImg from "../../assets/images/slider_img.png";
+import SliderImg from "../../assets/images/png/slider_img.png";
 import { Link } from "react-router-dom";
 
 const images = [

@@ -1,13 +1,12 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 
-import SiteLogo from "../assets/images/site_logo.svg";
+import SiteLogo from "../assets/images/svg/site_logo.svg";
 import { FaRegUser } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa6";
 import { IoMdStats } from "react-icons/io";
 import { MdOutlineShoppingCart } from "react-icons/md";
 
-import { Dropdown, Space } from "antd";
 import AllCategories from "./AllCategories";
 import HeaderBottom from "./header/HeaderBottom";
 import { RxHamburgerMenu } from "react-icons/rx";

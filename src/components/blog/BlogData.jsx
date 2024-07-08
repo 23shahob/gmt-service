@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { CatalogData } from "../../assets/data/data";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { CatalogData } from "../../assets/data/CatalogData";
 
 const BlogData = () => {
   const itemsPerPage = 4;

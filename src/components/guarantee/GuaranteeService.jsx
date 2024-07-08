@@ -1,8 +1,8 @@
 import React from "react";
-import Guarantee1 from "../../assets/images/guarentee1.svg";
-import Guarantee2 from "../../assets/images/guarentee2.svg";
-import Guarantee3 from "../../assets/images/guarentee3.svg";
-import Guarantee4 from "../../assets/images/guarentee4.svg";
+import Guarantee1 from "../../assets/images/svg/guarentee1.svg";
+import Guarantee2 from "../../assets/images/svg/guarentee2.svg";
+import Guarantee3 from "../../assets/images/svg/guarentee3.svg";
+import Guarantee4 from "../../assets/images/svg/guarentee4.svg";
 
 const GuaranteeService = () => {
   return (

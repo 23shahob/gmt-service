@@ -2,9 +2,9 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Person1 from "../../assets/images/person1.png";
-import Person2 from "../../assets/images/person2.png";
-import Person3 from "../../assets/images/person3.png";
+import Person1 from "../../assets/images/png/person1.png";
+import Person2 from "../../assets/images/png/person2.png";
+import Person3 from "../../assets/images/png/person3.png";
 
 const DoctorsSection = () => {
   const sliderRef = useRef(null);

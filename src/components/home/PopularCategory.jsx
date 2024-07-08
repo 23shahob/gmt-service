@@ -1,6 +1,6 @@
 import React from "react";
-import { CatalogData, CategoryData } from "../../assets/data/data";
 import { Link } from "react-router-dom";
+import { CategoryData } from "../../assets/data/CategoryData";
 
 const PopularCategory = () => {
   return (

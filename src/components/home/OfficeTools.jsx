@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import Slider from "react-slick";
-import { CarouselData } from "../../assets/data/data";
+import { CarouselData } from "../../assets/data/CarouselData";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 

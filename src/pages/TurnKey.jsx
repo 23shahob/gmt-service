@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { CarouselData } from "../assets/data/data";
+import { CarouselData } from "../assets/data/CarouselData";
 import HomeStaticSection from "../components/home/HomeStaticSection";
 import AccordionSection from "../components/home/AccordionSection";
 import Location from "../components/home/Location";

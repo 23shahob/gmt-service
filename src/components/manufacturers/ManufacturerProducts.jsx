@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { CiSliderHorizontal } from "react-icons/ci";
 import { countryName } from "../../assets/data/countryName";
-import CragHopper from "../../assets/images/craghopper.svg";
+import CragHopper from "../../assets/images/svg/craghopper.svg";
 
 const ManufacturerProducts = () => {
   const [search, setSearch] = useState("");

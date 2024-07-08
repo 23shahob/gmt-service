@@ -1,5 +1,5 @@
 import React from "react";
-import PartnerImg from "../../assets/images/partner_img.png";
+import PartnerImg from "../../assets/images/png/partner_img.png";
 
 const PartnerSection = () => {
   return (

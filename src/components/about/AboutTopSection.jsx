@@ -1,5 +1,5 @@
 import React from "react";
-import MainImg from "../../assets/images/about_main.png";
+import MainImg from "../../assets/images/png/about_main.png";
 import FactsSection from "./FactsSection";
 
 const AboutTopSection = () => {

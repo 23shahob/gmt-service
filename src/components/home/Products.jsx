@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ProductsData } from "../../assets/data/data";
+import { ProductsData } from "../../assets/data/ProductsData";
 import { IoBarChartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";

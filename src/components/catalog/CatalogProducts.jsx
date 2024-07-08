@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { CatalogData } from "../../assets/data/data";
+import { CatalogData } from "../../assets/data/CatalogData";
 
 const CatalogProducts = () => {
   const [open, setOpen] = useState(true);

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Cards } from "../assets/data/data";
+import { Cards } from "../assets/data/Cards";
 import { Rate } from "antd";
 import { Rating } from "@mui/material";
 
