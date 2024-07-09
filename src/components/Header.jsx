@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 
 import SiteLogo from "../assets/images/svg/site_logo.svg";
@@ -12,6 +12,7 @@ import HeaderBottom from "./header/HeaderBottom";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { FiPhone } from "react-icons/fi";
 import { useSelector } from "react-redux";
+import RegistrationForm from "./modals/RegistrationForm";
 
 const Header = () => {
   const items = [
@@ -68,6 +69,18 @@ const Header = () => {
   // const amount = useSelector((store) => store.basket.amount);
   const cart = useSelector((state) => state.cart);
   const totalCount = cart.items.reduce((acc, item) => acc + item.amount, 0);
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const isAuthenticated = useSelector((state) => state.user.user);
+  const { authUser } = isAuthenticated;
+
+  const handleUser = () => {
+    if (!authUser) {
+      setModalOpen(true);
+    } else {
+      window.location.href = "/personal";
+    }
+  };
   return (
     <header>
       <div className="mx-auto hidden max-w-[1440px] items-center justify-between px-4 md:flex md:px-5 lg:px-4">
@@ -118,7 +131,7 @@ const Header = () => {
         </div>
       </div>
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
-      <div className="sticky top-0 z-50 bg-[#F8F7F3]">
+      <div className="bg-[#F8F7F3]">
         <div className="mx-auto w-full max-w-[1440px] items-center justify-between px-4 md:flex md:h-[52px] md:px-5 lg:h-[93px] lg:px-4">
           <div className="mb-4 mt-3 block items-center md:flex md:gap-8 lg:gap-10">
             <div className="flex items-center justify-between">
@@ -188,14 +201,18 @@ const Header = () => {
             </span>
           </div>
           <ul className="hidden items-center md:flex md:gap-[15px] lg:gap-[25px]">
-            <NavLink to="/personal">
-              <li className="group flex cursor-pointer flex-col items-center justify-center">
-                <FaRegUser className="mb-1 transition duration-300 ease-in-out group-hover:text-[#07745E] md:h-5 md:w-5 lg:h-6 lg:w-6" />
-                <span className="hidden text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E] xl:block">
-                  Войти
-                </span>
-              </li>
-            </NavLink>
+            <li
+              onClick={handleUser}
+              className="group flex cursor-pointer flex-col items-center justify-center"
+            >
+              <FaRegUser className="mb-1 transition duration-300 ease-in-out group-hover:text-[#07745E] md:h-5 md:w-5 lg:h-6 lg:w-6" />
+              <span className="hidden text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E] xl:block">
+                Войти
+              </span>
+            {modalOpen && (
+              <RegistrationForm onClose={() => setModalOpen(false)} />
+            )}
+            </li>
             <NavLink to="/wishlist">
               <li className="group flex cursor-pointer flex-col items-center justify-center">
                 <FaRegHeart className="mb-1 transition duration-300 ease-in-out group-hover:text-[#07745E] md:h-5 md:w-5 lg:h-6 lg:w-6" />

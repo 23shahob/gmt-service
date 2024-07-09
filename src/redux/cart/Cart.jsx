@@ -12,16 +12,17 @@ import {
 } from "./cartReducer";
 import { IoBarChartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
+import { addToWishlist } from "../wishlist/wishlistReducer";
 
 const Cart = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
 
   const totalCount = cart.items.reduce((acc, item) => acc + item.amount, 0);
-
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   const filterStock = (stock) => {
     switch (stock) {
@@ -56,7 +57,7 @@ const Cart = () => {
         <div className="grid grid-cols-1 gap-[10px] md:grid-cols-3 lg:grid-cols-4">
           <div className="md:col-span-2 lg:col-span-3">
             {cart.items.length === 0 ? (
-              <h1 className="font-semibold text-5xl">Your cart is empty😐</h1>
+              <h1 className="text-5xl font-semibold">Your cart is empty😐</h1>
             ) : (
               <div>
                 {cart.items.map((item) => (
@@ -74,7 +75,10 @@ const Cart = () => {
                         <button className="transition duration-300 ease-in-out hover:text-[#088269]">
                           <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                         </button>
-                        <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                        <button
+                          onClick={() => dispatch(addToWishlist(item))}
+                          className="transition duration-300 ease-in-out hover:text-[#088269]"
+                        >
                           <FaRegHeart className="h-5 w-5 lg:h-6 lg:w-6" />
                         </button>
                       </div>
@@ -124,7 +128,10 @@ const Cart = () => {
                             <button className="transition duration-300 ease-in-out hover:text-[#088269]">
                               <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                             </button>
-                            <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                            <button
+                              onClick={() => dispatch(addToWishlist(item))}
+                              className="transition duration-300 ease-in-out hover:text-[#088269]"
+                            >
                               <FaRegHeart className="h-5 w-5 lg:h-6 lg:w-6" />
                             </button>
                           </div>

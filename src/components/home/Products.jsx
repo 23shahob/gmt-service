@@ -5,7 +5,7 @@ import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart/cartReducer";
-
+import {addToWishlist} from "../../redux/wishlist/wishlistReducer"
 const Products = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -31,6 +31,7 @@ const Products = () => {
     }
   };
   const dispatch = useDispatch();
+
   return (
     <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
       <h2 className="mb-6 text-lg font-medium leading-[120%] md:mb-8 md:text-xl lg:mb-10 lg:text-[30px]">
@@ -60,7 +61,10 @@ const Products = () => {
                       <button className="transition duration-300 ease-in-out hover:text-[#088269]">
                         <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                       </button>
-                      <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                      <button
+                        onClick={() => dispatch(addToWishlist(item))}
+                        className="transition duration-300 ease-in-out hover:text-[#088269]"
+                      >
                         <FaRegHeart className="h-5 w-5 lg:h-6 lg:w-6" />
                       </button>
                     </div>

@@ -3,6 +3,7 @@ import cartReducer, { loadCart } from "./cart/cartReducer";
 // import productReducer from "./productSlice";
 import ProductViewReducer from "./productview/ProductViewReducer";
 import wishlistReducer, { loadWishlist } from "./wishlist/wishlistReducer";
+import authReducer from "./auth/authReducer";
 
 const cart = JSON.parse(localStorage.getItem("cart")) || {
   items: [],
@@ -18,6 +19,7 @@ export const store = configureStore({
     cart: cartReducer,
     product: ProductViewReducer,
     wishlist: wishlistReducer,
+    user: authReducer,
   },
 });
 

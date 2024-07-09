@@ -23,13 +23,23 @@ import ProductView from "./pages/ProductView";
 import Compare from "./pages/Compare";
 import Personal from "./pages/Personal";
 import { useSelector } from "react-redux";
+import Breadcrumb from "./components/Breadcrumb";
 
 const App = () => {
-  // const isAuthenticated = useSelector((state) => state.auth.isAuthenticated);
+  const showFooter = location.pathname !== "/personal";
+
+  // const checking = location.pathname !== "/";
+  // const breadCrumb = location.pathname.slice(1);
+
+  const user = useSelector((state) => state.user.user);
+  const { authUser } = user;
+  console.log("user", user);
+  console.log("authUser", authUser);
 
   return (
     <>
       <Header />
+      {/* {checking && <Breadcrumb breadCrumb={breadCrumb} />} */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -51,10 +61,10 @@ const App = () => {
         <Route path="/compare" element={<Compare />} />
         <Route
           path="/personal"
-          // element={isAuthenticated ? <Personal /> : <Navigate to="/" />}
+          element={authUser ? <Personal /> : <Navigate to="/" />}
         />
       </Routes>
-      <Footer />
+      {showFooter && <Footer />}
     </>
   );
 };

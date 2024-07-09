@@ -16,7 +16,6 @@ const Home = () => {
     window.scrollTo(0, 0);
   }, []);
   return (
-    // <div className="pt-[223px]">
     <div>
       <div>
         <div className="md:pb-[70px] lg:pb-[100px]">
