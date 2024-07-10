@@ -4,7 +4,7 @@ import Marquee from "react-fast-marquee";
 const Clients = () => {
   return (
     <div className="bg-[#E5E4ED] py-10 lg:py-[100px]">
-      <div className="mx-auto mb-10 max-w-[1440px] justify-between sm:flex md:px-5 md:pb-14 lg:px-4 lg:pb-[100px]">
+      <div className="mx-auto mb-10 max-w-[1440px] px-4 justify-between sm:flex md:px-5 md:pb-14 lg:px-4 lg:pb-[100px]">
         <h3 className="mb-10 text-lg font-medium leading-[120%] sm:mb-0 md:text-xl lg:text-[30px]">
           Наши клиенты
         </h3>

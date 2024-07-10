@@ -27,7 +27,7 @@ const PopularCategory = () => {
                   <img
                     src={item.image}
                     alt="Slider Img"
-                    className="rounded-t-[10px] object-cover"
+                    className="h-full w-full rounded-t-[10px] object-contain"
                   />
                 </div>
                 <div className="px-4 py-4 lg:px-6 lg:py-5">
@@ -39,7 +39,7 @@ const PopularCategory = () => {
             </div>
           ))}
         </div>
-        <div className="grid grid-rows-1">
+        <div className="grid grid-rows-1 gap-[10px]">
           {CategoryData.slice(2, 3).map((item) => (
             <div
               key={item.id}
@@ -50,7 +50,7 @@ const PopularCategory = () => {
                   <img
                     src={item.image}
                     alt="Slider Img"
-                    className="rounded-t-[10px] object-cover"
+                    className="h-full w-full rounded-t-[10px] object-contain"
                   />
                 </div>
                 <div className="px-4 py-4 lg:px-6 lg:py-5">
@@ -73,7 +73,7 @@ const PopularCategory = () => {
                   <img
                     src={item.image}
                     alt="Slider Img"
-                    className="rounded-t-[10px] object-cover"
+                    className="h-full w-full rounded-t-[10px] object-contain"
                   />
                 </div>
                 <div className="px-4 py-4 lg:px-6 lg:py-5">
@@ -85,7 +85,7 @@ const PopularCategory = () => {
             </div>
           ))}
         </div>
-        <div className="gap-[10px] md:flex lg:grid lg:grid-rows-2">
+        <div className="grid gap-[10px] md:flex lg:grid lg:grid-rows-2">
           {CategoryData.slice(5, 7).map((item) => (
             <div
               key={item.id}
@@ -96,7 +96,7 @@ const PopularCategory = () => {
                   <img
                     src={item.image}
                     alt="Slider Img"
-                    className="rounded-t-[10px] object-cover"
+                    className="h-full w-full rounded-t-[10px] object-contain"
                   />
                 </div>
                 <div className="px-4 py-4 lg:px-6 lg:py-5">
