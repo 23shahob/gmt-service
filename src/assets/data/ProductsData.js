@@ -9,7 +9,7 @@ export const ProductsData = [
     id: 1,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Биохимический анализатор BE-300",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/b43/p0kjspkkdinzbm6ueazwgguq7r5zb6c0.jpg",
@@ -18,7 +18,7 @@ export const ProductsData = [
     id: 2,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Гематологический анализатор G-2000",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/e30/ipr8a8kdeuouv70wdfwxls0gshx1o9cf.jpg",
@@ -27,7 +27,7 @@ export const ProductsData = [
     id: 3,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Иммуноферментный анализатор IF-900",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/aa9/cwewtuy596d28kgu4qj0ydq0nscr2brh/29_1.webp",
@@ -36,7 +36,7 @@ export const ProductsData = [
     id: 4,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Анализатор мочи MA-77",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/914/wl2zxco085r70cq6gawqfhd6yejwbnig.jpg",
@@ -45,7 +45,7 @@ export const ProductsData = [
     id: 5,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Биохимический анализатор BA-500",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/c1b/tb8g4qj4cfzknyfyt6tz4bjej8f6lly8/stol_1.webp",
@@ -54,7 +54,7 @@ export const ProductsData = [
     id: 6,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Гематологический анализатор GA-100",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/19f/7hdwpbywc5t5tvh8ku4n5819p9yobklb.png",
@@ -63,7 +63,7 @@ export const ProductsData = [
     id: 7,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Иммуноферментный анализатор IF-700",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/140/focc7zsgmy54em60fvhobzpsqz4mwrbh.jpg",
@@ -72,7 +72,7 @@ export const ProductsData = [
     id: 8,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Анализатор мочи MA-88",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/b43/p0kjspkkdinzbm6ueazwgguq7r5zb6c0.jpg",
@@ -81,7 +81,7 @@ export const ProductsData = [
     id: 9,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Биохимический анализатор BA-600",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/de5/edmnqm9vy71ekjd3f6v8cvtoc6na41te.jpg",
@@ -90,7 +90,7 @@ export const ProductsData = [
     id: 10,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Гематологический анализатор GA-200",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/590/kr32p43ifzvk9ktlmtlvawnpm5j87gxb/lb_05810_anons_eleps_f.png",
@@ -99,7 +99,7 @@ export const ProductsData = [
     id: 11,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Иммуноферментный анализатор IF-800",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/9c1/4ms9lhlumudib6nskzkc6mw8dem0sq9p.webp",
@@ -108,7 +108,7 @@ export const ProductsData = [
     id: 12,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Анализатор мочи MA-99",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/0b3/h866rclv8mwxv3r69c8mwr799x5hhjjj.jpg",
@@ -117,7 +117,7 @@ export const ProductsData = [
     id: 13,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Биохимический анализатор BA-700",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/372/7t12nnikgc1f8df1t1gok5f8gv8ygqme.jpg",
@@ -126,7 +126,7 @@ export const ProductsData = [
     id: 14,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Гематологический анализатор GA-300",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/734/yhhfri3mehzazox5tnbbhvuq45tuor6b.png",
@@ -135,7 +135,7 @@ export const ProductsData = [
     id: 15,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Иммуноферментный анализатор IF-900",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/e96/5au2209q6duk9vcqosj8m0c6aupigl2y.jpg",
@@ -144,7 +144,7 @@ export const ProductsData = [
     id: 16,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Анализатор мочи MA-100",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/56d/564riow1p797rq1owatsnxdij1vp1c5r/olympus_oev_191_191h_f.png",
@@ -153,16 +153,16 @@ export const ProductsData = [
     id: 17,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Биохимический анализатор BA-800",
     stock: "Новинка",
     desc: "",
-    img: "	https://global-mt.ru/upload/iblock/9d0/7zy5zyychh7bulk760pi04y3q4hfk6yt.jpg",
+    img: "https://global-mt.ru/upload/iblock/9d0/7zy5zyychh7bulk760pi04y3q4hfk6yt.jpg",
     price: 190,
     amount: 1,
     id: 18,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Гематологический анализатор GA-400",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/d76/k3mpptzqwbmgad5j26eb0r2gjr9e62gz.jpg",
@@ -171,7 +171,7 @@ export const ProductsData = [
     id: 19,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Иммуноферментный анализатор IF-1000",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/b43/p0kjspkkdinzbm6ueazwgguq7r5zb6c0.jpg",
@@ -180,7 +180,7 @@ export const ProductsData = [
     id: 20,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Анализатор мочи MA-111",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/e30/ipr8a8kdeuouv70wdfwxls0gshx1o9cf.jpg",
@@ -189,7 +189,7 @@ export const ProductsData = [
     id: 21,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Биохимический анализатор BA-900",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/aa9/cwewtuy596d28kgu4qj0ydq0nscr2brh/29_1.webp",
@@ -198,7 +198,7 @@ export const ProductsData = [
     id: 22,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Гематологический анализатор GA-500",
     stock: "-30%",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/914/wl2zxco085r70cq6gawqfhd6yejwbnig.jpg",
@@ -207,7 +207,7 @@ export const ProductsData = [
     id: 23,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Иммуноферментный анализатор IF-1100",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/c1b/tb8g4qj4cfzknyfyt6tz4bjej8f6lly8/stol_1.webp",
@@ -216,7 +216,7 @@ export const ProductsData = [
     id: 24,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Анализатор мочи MA-122",
     stock: "Новинка",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/19f/7hdwpbywc5t5tvh8ku4n5819p9yobklb.png",
@@ -225,7 +225,7 @@ export const ProductsData = [
     id: 25,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Биохимический анализатор BA-1000",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/140/focc7zsgmy54em60fvhobzpsqz4mwrbh.jpg",
@@ -234,7 +234,7 @@ export const ProductsData = [
     id: 26,
   },
   {
-    title: "Анализатор мочи MIND UA-66",
+    title: "Гематологический анализатор GA-600",
     stock: "Хит продаж",
     desc: "",
     img: "https://global-mt.ru/upload/iblock/b43/p0kjspkkdinzbm6ueazwgguq7r5zb6c0.jpg",

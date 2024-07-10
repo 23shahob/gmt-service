@@ -69,10 +69,12 @@ const RegistrationForm = ({ onClose }) => {
                 placeholder="Ваш email*"
               />
               {errors.email && (
-                <p className="mt-1 text-[10px] lg:text-xs mb-5 text-red-500">{errors.email}</p>
+                <p className="mb-5 mt-1 text-[10px] text-red-500 lg:text-xs">
+                  {errors.email}
+                </p>
               )}
             </div>
-            <div className="lg:mb-12 mb-10 h-7 ">
+            <div className="mb-10 h-7 lg:mb-12">
               <input
                 className="h-full w-full border-b border-[#7A7687] pb-3 text-xs font-normal text-[#7A7687] outline-none lg:text-sm"
                 type="password"
@@ -82,7 +84,9 @@ const RegistrationForm = ({ onClose }) => {
                 placeholder="Пароль*"
               />
               {errors.password && (
-                <p className="mt-1 mb-5 text-[10px] lg:text-xs text-red-500">{errors.password}</p>
+                <p className="mb-5 mt-1 text-[10px] text-red-500 lg:text-xs">
+                  {errors.password}
+                </p>
               )}
             </div>
             <button

@@ -13,57 +13,61 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { FiPhone } from "react-icons/fi";
 import { useSelector } from "react-redux";
 import RegistrationForm from "./modals/RegistrationForm";
+import { Dropdown, Space } from "antd";
+import Search from "./Search";
+import NavbarHamburger from "./modals/NavbarHamburger";
+import BottomHeader from "./modals/BottomHeader";
 
 const Header = () => {
   const items = [
-    {
-      key: "1",
-      label: (
-        <Link to="#" className="text-[12px] font-normal">
-          Вакансии
-        </Link>
-      ),
-    },
-    {
-      key: "2",
-      label: (
-        <Link to="#" className="text-[12px] font-normal">
-          Отзывы
-        </Link>
-      ),
-    },
+    // {
+    //   key: "1",
+    //   label: (
+    //     <Link to="#" className="text-[12px] font-normal">
+    //       Вакансии
+    //     </Link>
+    //   ),
+    // },
+    // {
+    //   key: "2",
+    //   label: (
+    //     <Link to="#" className="text-[12px] font-normal">
+    //       Отзывы
+    //     </Link>
+    //   ),
+    // },
     {
       key: "3",
       label: (
-        <Link to="#" className="text-[12px] font-normal">
+        <Link to="/certificates" className="text-[12px] font-normal">
           Сертификаты
         </Link>
       ),
     },
-    {
-      key: "4",
-      label: (
-        <Link to="#" className="text-[12px] font-normal">
-          Партнерские программы
-        </Link>
-      ),
-    },
-    {
-      key: "4",
-      label: (
-        <Link to="#" className="text-[12px] font-normal">
-          Оптовые продажи
-        </Link>
-      ),
-    },
-    {
-      key: "4",
-      label: (
-        <Link to="#" className="text-[12px] font-normal">
-          Лизинг
-        </Link>
-      ),
-    },
+    // {
+    //   key: "4",
+    //   label: (
+    //     <Link to="#" className="text-[12px] font-normal">
+    //       Партнерские программы
+    //     </Link>
+    //   ),
+    // },
+    // {
+    //   key: "4",
+    //   label: (
+    //     <Link to="#" className="text-[12px] font-normal">
+    //       Оптовые продажи
+    //     </Link>
+    //   ),
+    // },
+    // {
+    //   key: "4",
+    //   label: (
+    //     <Link to="#" className="text-[12px] font-normal">
+    //       Лизинг
+    //     </Link>
+    //   ),
+    // },
   ];
 
   // const amount = useSelector((store) => store.basket.amount);
@@ -81,12 +85,16 @@ const Header = () => {
       window.location.href = "/personal";
     }
   };
+
+  const [search, setSearch] = useState("");
+  const [openHamburger, setOpenHamburger] = useState(false);
+
   return (
     <header>
       <div className="mx-auto hidden max-w-[1440px] items-center justify-between px-4 md:flex md:px-5 lg:px-4">
-        <ul className="flex items-center md:gap-[10px] md:gap-y-[5px] lg:gap-5 lg:py-[10px]">
+        <ul className="flex items-center md:gap-[10px] md:gap-y-[5px] md:py-1 lg:gap-5 lg:py-[10px]">
           <li className="text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E]">
-            {/* <Space direction="vertical">
+            <Space direction="vertical">
               <Space wrap>
                 <Dropdown
                   menu={{
@@ -94,13 +102,12 @@ const Header = () => {
                   }}
                   placement="bottom"
                 >
-                  
+                  <NavLink className="hover:text-[#07745E]" to="/about">
+                    О компании
+                  </NavLink>
                 </Dropdown>
               </Space>
-            </Space> */}
-            <NavLink className="hover:text-[#07745E]" to="/about">
-              О компании
-            </NavLink>
+            </Space>
           </li>
           <li className="font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out hover:text-[#07745E] md:text-[10px] lg:text-[12px]">
             <NavLink to="/delivery">Доставка</NavLink>
@@ -132,7 +139,9 @@ const Header = () => {
       </div>
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
       <div className="bg-[#F8F7F3]">
-        <div className="mx-auto w-full max-w-[1440px] items-center justify-between px-4 md:flex md:h-[52px] md:px-5 lg:h-[93px] lg:px-4">
+        <div
+          className={`mx-auto w-full max-w-[1440px] items-center justify-between md:flex md:h-[52px] md:px-5 lg:h-[93px] lg:px-4 ${openHamburger ? "" : "px-4"}`}
+        >
           <div className="mb-4 mt-3 block items-center md:flex md:gap-8 lg:gap-10">
             <div className="flex items-center justify-between">
               <div className="mb-3 md:mb-0">
@@ -146,11 +155,17 @@ const Header = () => {
               </div>
               <div className="flex gap-5 md:hidden">
                 <FiPhone className="h-6 w-6" />
-                <RxHamburgerMenu className="h-6 w-6" />
+                <RxHamburgerMenu
+                  onClick={() => setOpenHamburger(true)}
+                  className="h-6 w-6 transition duration-300 ease-in-out"
+                />
               </div>
+              {openHamburger && (
+                <NavbarHamburger setOpenHamburger={setOpenHamburger} />
+              )}
             </div>
             <div className="relative flex h-[34px] w-full rounded-[50px] bg-[#D5D1E1] px-[2px] py-[1px] md:h-8 md:w-[403px] lg:h-[41px] lg:w-[614px]">
-              <div className="flex h-full w-full gap-3 rounded-[50px] bg-white md:w-[360px] lg:w-[565px]">
+              <div className="relative flex h-full w-full gap-3 rounded-[50px] bg-white md:w-[360px] lg:w-[565px]">
                 <div className="relative flex items-center gap-1 rounded-[50px] bg-[#EFEFEF] px-[10px] md:px-[15px] md:py-[7px] lg:py-[10px]">
                   <AllCategories text={"Все категории"} />
                   <i>
@@ -171,8 +186,12 @@ const Header = () => {
                 <input
                   className="h-full w-3/5 rounded-r-[50px] text-sm font-normal leading-normal text-[#7A7687] outline-none"
                   type="search"
+                  onChange={(e) => setSearch(e.target.value)}
                   placeholder="Поиск"
                 />
+                {search.length > 0 && (
+                  <Search setSearch={setSearch} search={search} />
+                )}
               </div>
               <span className="absolute right-[14px] top-1 flex items-center lg:top-2">
                 <i className="md:h-[17px] md:w-[17px] lg:h-6 lg:w-6">
@@ -209,9 +228,6 @@ const Header = () => {
               <span className="hidden text-[12px] font-medium leading-normal text-[#7A7687] transition duration-300 ease-in-out group-hover:text-[#07745E] xl:block">
                 Войти
               </span>
-            {modalOpen && (
-              <RegistrationForm onClose={() => setModalOpen(false)} />
-            )}
             </li>
             <NavLink to="/wishlist">
               <li className="group flex cursor-pointer flex-col items-center justify-center">
@@ -248,6 +264,10 @@ const Header = () => {
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
       <HeaderBottom />
       <hr className="h-[1px] border-none bg-[#E5E2EE]" />
+      {modalOpen && <RegistrationForm onClose={() => setModalOpen(false)} />}
+      <div className="fixed bottom-0 z-50 w-full bg-[#F8F7F3]">
+        <BottomHeader />
+      </div>
     </header>
   );
 };

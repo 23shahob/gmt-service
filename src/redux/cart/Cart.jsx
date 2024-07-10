@@ -13,6 +13,7 @@ import {
 import { IoBarChartOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
 import { addToWishlist } from "../wishlist/wishlistReducer";
+import { addToCompare } from "../compare/CompareReducer";
 
 const Cart = () => {
   useEffect(() => {
@@ -57,7 +58,9 @@ const Cart = () => {
         <div className="grid grid-cols-1 gap-[10px] md:grid-cols-3 lg:grid-cols-4">
           <div className="md:col-span-2 lg:col-span-3">
             {cart.items.length === 0 ? (
-              <h1 className="text-5xl font-semibold">Your cart is empty😐</h1>
+              <h1 className="text-5xl font-semibold">
+                Не добавлено товаров в Корзину😐
+              </h1>
             ) : (
               <div>
                 {cart.items.map((item) => (
@@ -72,7 +75,10 @@ const Cart = () => {
                         {item.stock}
                       </span>
                       <div className="absolute right-2 top-2 flex gap-3 md:hidden md:gap-5">
-                        <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                        <button
+                          onClick={() => dispatch(addToCompare(item))}
+                          className="transition duration-300 ease-in-out hover:text-[#088269]"
+                        >
                           <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                         </button>
                         <button
@@ -125,7 +131,10 @@ const Cart = () => {
                         </div>
                         <div className="absolute right-2 top-2 flex gap-[6px] md:right-4 md:top-4 md:gap-4">
                           <div className="hidden md:flex md:gap-5">
-                            <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                            <button
+                              onClick={() => dispatch(addToCompare(item))}
+                              className="transition duration-300 ease-in-out hover:text-[#088269]"
+                            >
                               <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                             </button>
                             <button

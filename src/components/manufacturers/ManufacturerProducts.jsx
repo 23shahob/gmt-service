@@ -4,6 +4,7 @@ import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { CiSliderHorizontal } from "react-icons/ci";
 import { countryName } from "../../assets/data/countryName";
 import CragHopper from "../../assets/images/svg/craghopper.svg";
+import { MdOutlineClose } from "react-icons/md";
 
 const ManufacturerProducts = () => {
   const [search, setSearch] = useState("");
@@ -39,26 +40,37 @@ const ManufacturerProducts = () => {
     pageNumbers.push(i);
   }
 
+  const [openFilter, setOpenFilter] = useState(false);
+
   return (
     <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">
-      <button className="mb-3 flex w-full items-center justify-center gap-2 rounded-[5px] border border-[#E5E2EE] px-5 py-3 md:hidden">
+      <button
+        onClick={() => setOpenFilter(true)}
+        className="mb-3 flex w-full items-center justify-center gap-2 rounded-[5px] border border-[#E5E2EE] px-5 py-3 md:hidden"
+      >
         <CiSliderHorizontal className="h-[17px] w-[17px] text-gray-600" />
         <span className="text-xs font-medium leading-[118%]">Фильтр</span>
       </button>
       <div className="grid grid-cols-2 gap-[10px] md:grid-cols-3 lg:grid-cols-4">
-        <div className="hidden md:block">
-          <div className="mb-[5px] flex items-center justify-between rounded-[10px] border border-[#E5E2EE] py-4 lg:px-5">
+        <div
+          className={`md:block md:col-span-1 ${openFilter ? "col-span-2 block" : "hidden"}`}
+        >
+          <div className="mb-[5px] hidden items-center justify-between rounded-[10px] border border-[#E5E2EE] px-4 py-4 md:flex lg:px-5">
             <h3 className="text-sm font-medium leading-[140%] lg:text-base">
               Направления
             </h3>
             <MdOutlineKeyboardArrowRight className="rotate-90" />
           </div>
-          <div className="rounded-[10px] border border-[#E5E2EE] md:px-4 lg:px-5">
+          <div className="rounded-[10px] border border-[#E5E2EE] px-4 lg:px-5">
             <div className="flex items-center justify-between py-4">
               <h3 className="lg:textbase text-sm font-medium leading-[140%]">
                 Страны
               </h3>
-              <MdOutlineKeyboardArrowRight className="-rotate-90" />
+              {openFilter ? (
+                <MdOutlineClose className="block md:hidden" onClick={() => setOpenFilter(false)} />
+              ) : (
+                <MdOutlineKeyboardArrowRight className="-rotate-90 hidden md:block" />
+              )}
             </div>
             <form className="flex h-10 w-full items-center rounded-[50px] border border-[#E5E2EE] bg-white">
               <input
@@ -90,7 +102,7 @@ const ManufacturerProducts = () => {
                 </i>
               </button>
             </form>
-            <ul className="scrollbar my-4 mb-[10px] flex max-h-60 flex-col overflow-y-scroll md:gap-y-2 lg:gap-y-3">
+            <ul className="scrollbar my-4 mb-[10px] flex max-h-60 flex-col gap-y-2 overflow-y-scroll lg:gap-y-3">
               {filteredCountries.map((country, index) => (
                 <li key={index} className="flex items-center gap-4">
                   <input className="h-5 w-5" type="checkbox" />

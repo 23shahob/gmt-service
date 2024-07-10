@@ -8,6 +8,7 @@ import { AiFillInstagram } from "react-icons/ai";
 import { FaTwitter } from "react-icons/fa";
 import { FaOdnoklassniki } from "react-icons/fa";
 import { useDispatch, useSelector } from "react-redux";
+import {logout} from "../redux/auth/authReducer"
 
 const Personal = () => {
   const [image, setImage] = useState(null);
@@ -37,13 +38,18 @@ const Personal = () => {
 
   return (
     <div className="">
-      <div className="mx-auto mb-5 max-w-[1440px] px-4 md:mb-12 md:px-5 lg:mb-24 lg:px-4">
+      <div className="mx-auto mb-5 flex max-w-[1440px] justify-between px-4 md:mb-12 md:px-5 lg:mb-24 lg:px-4">
         <div className="mb-5 flex items-center gap-2 py-5">
           <Link to="/" className="text-sm font-normal text-[#7A7687]">
             Главная
           </Link>
           <MdOutlineKeyboardArrowRight className="h-5 w-5 text-[#7A7687]" />
           <p className="text-sm font-normal">Личный кабинет</p>
+        </div>
+        <div className="mt-3">
+          <button onClick={()=>dispatch(logout())} className="rounded-[50px] border border-[#7A7687] px-5 py-2 font-semibold text-red-500 transition duration-300 ease-in-out hover:border-red-500">
+            Log out
+          </button>
         </div>
       </div>
       <div className="mx-auto max-w-[1440px] px-4 md:px-5 lg:px-4">

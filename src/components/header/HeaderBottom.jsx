@@ -166,7 +166,7 @@ const HeaderBottom = () => {
         </i>
         <ul className="flex items-center gap-[25px]">
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
-            {/* <Space direction="vertical">
+            <Space direction="vertical">
               <Space wrap>
                 <Dropdown
                   menu={{
@@ -179,10 +179,10 @@ const HeaderBottom = () => {
                   </NavLink>
                 </Dropdown>
               </Space>
-            </Space> */}
-            <NavLink to="/catalog" className="hover:text-[#07745E]">
+            </Space>
+            {/* <NavLink to="/catalog" className="hover:text-[#07745E]">
               Каталог
-            </NavLink>
+            </NavLink> */}
           </li>
           <li className="font-semibold transition duration-300 ease-in-out hover:text-[#07745E] md:text-[12px] lg:text-sm">
             <NavLink to="/manufacturer">Производители</NavLink>

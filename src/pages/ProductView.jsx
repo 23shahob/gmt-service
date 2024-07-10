@@ -14,6 +14,8 @@ import ProductCharacteristics from "../components/ProductCharacteristics";
 import Products from "../components/home/Products";
 import Brends from "../components/home/Brends";
 import FooterTop from "../components/home/FooterTop";
+import { addToCompare } from "../redux/compare/CompareReducer";
+import { addToWishlist } from "../redux/wishlist/wishlistReducer";
 
 const desc = ["1.0", "2.0", "3.0", "4.0", "5.0"];
 
@@ -84,10 +86,16 @@ const ProductView = () => {
                 {product.stock}
               </span>
               <div className="absolute right-6 top-6 flex gap-[6px] lg:gap-[10px]">
-                <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                <button
+                  onClick={() => dispatch(addToCompare(product))}
+                  className="transition duration-300 ease-in-out hover:text-[#088269]"
+                >
                   <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                 </button>
-                <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                <button
+                  onClick={() => dispatch(addToWishlist(product))}
+                  className="transition duration-300 ease-in-out hover:text-[#088269]"
+                >
                   <FaRegHeart className="h-5 w-5 lg:h-6 lg:w-6" />
                 </button>
               </div>

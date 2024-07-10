@@ -28,13 +28,8 @@ import Breadcrumb from "./components/Breadcrumb";
 const App = () => {
   const showFooter = location.pathname !== "/personal";
 
-  // const checking = location.pathname !== "/";
-  // const breadCrumb = location.pathname.slice(1);
-
   const user = useSelector((state) => state.user.user);
   const { authUser } = user;
-  console.log("user", user);
-  console.log("authUser", authUser);
 
   return (
     <>

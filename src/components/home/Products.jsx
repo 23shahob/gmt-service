@@ -5,7 +5,8 @@ import { FaRegHeart } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../redux/cart/cartReducer";
-import {addToWishlist} from "../../redux/wishlist/wishlistReducer"
+import { addToWishlist } from "../../redux/wishlist/wishlistReducer";
+import { addToCompare } from "../../redux/compare/CompareReducer";
 const Products = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -58,7 +59,10 @@ const Products = () => {
                       {item.stock}
                     </span>
                     <div className="absolute right-2 top-2 flex gap-[6px] lg:right-4 lg:gap-[10px]">
-                      <button className="transition duration-300 ease-in-out hover:text-[#088269]">
+                      <button
+                        onClick={() => dispatch(addToCompare(item))}
+                        className="transition duration-300 ease-in-out hover:text-[#088269]"
+                      >
                         <IoBarChartOutline className="h-5 w-5 lg:h-6 lg:w-6" />
                       </button>
                       <button
